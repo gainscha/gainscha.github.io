@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Gprinter下载</title>
+		<meta name="description" content="给您简单、便捷、好用的打印产品" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#48ae4c">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min_2.css" />
+		<link rel="stylesheet" type="text/css" href="css/style_2.css" />
+		<link rel="icon" href="/picture/favicon.ico" type="image/x-icon" />
+		<link rel="Shortcut Icon" href="/picture/favicon.ico" type="image/x-icon" />
+		<script src="js/jquery-3.2.1.min_2.js"></script>
+		<script src="js/bootstrap.min_2.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			.weixin-tip {
+				display: none;
+				position: fixed;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, 0.8);
+				filter: alpha(opacity=80);
+				height: 100%;
+				width: 100%;
+				z-index: 100;
+			}
+
+			.weixin-tip p {
+				text-align: center;
+				margin-top: 10%;
+				padding: 0 5%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="weixin-tip">
+			<p>
+				<img src="images/live_weixin.png" alt="微信打开" />
+			</p>
+		</div>
+		<div class="warpper">
+			<div class="header_nav">
+				<div class="navbar navbar-fixed-top header" role="navigation" id="nav-outer">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#nav_right"
+							 aria-expanded="false" aria-controls="navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" id="logo">
+								<!-- <img id="logoimg" src="picture/coolapk.svg" alt="Gprinter" /> -->
+								<span id="logofont">Gprinter</span>
+							</a>
+
+						</div>
+						<div class="navbar-right">
+							<a href="http://www.howbest.ltd:8181/docs/developer/developer-about" id="developer">
+								<span class="navbar-brand" style="color: white;">开发者帮助中心</span>
+							</a>
+						</div>
+
+
+					</div><!-- /.container -->
+				</div>
+				<div id="head" class="container header_nav">
+					<div class="row">
+						<div class="rowbox">
+							<div class="col-lg-6 col-sm-12 col-md-7" id="news-pic">
+								<p class="welcome_title">Gprinter</p>
+								<p class="welcome_font">让移动打印更简单、便捷</p>
+								<img src="picture/download_qrcode.png" alt="扫码下载Gprinter手机APP">
+								<p class="welcome_down_font" id="downloadButton">扫码下载Gprinter手机APP</p>
+								<a href="javascript:void(0);" onclick="return onDownloadApk(0);">
+									<button class="btn-lg"><img src="picture/android.png" alt="">下载Gprinter</button>
+								</a><br />
+								<a href="https://apps.apple.com/cn/app/id1500848484">
+									<button class="btn-lg"><img src="picture/android.png" alt="">iOS版Gprinter</button>
+								</a>
+							</div>
+							<div class="col-lg-6 col-sm-12 col-md-6" id="news-word">
+								<div class="divimg">
+									<img src="picture/index_phone.png" alt="" class="smail">
+									<div class="lunbo">
+										<div id="myCarousel" class="carousel slide swiper-wrapper">
+											<!-- 轮播（Carousel）指标 -->
+											<!--<ol class="carousel-indicators">-->
+											<!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+											<!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+											<!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+											<!--</ol>-->
+											<!-- 轮播（Carousel）项目 -->
+											<div class="carousel-inner">
+												<div class="item active swiper-slide">
+													<img src="picture/index_carousel1.jpg" alt="First slide">
+												</div>
+												<div class="item swiper-slide">
+													<img src="picture/index_carousel2.jpg" alt="Second slide">
+												</div>
+												<div class="item swiper-slide">
+													<img src="picture/index_carousel3.jpg" alt="Third slide">
+												</div>
+												<div class="item swiper-slide">
+													<img src="picture/index_carousel4.jpg" alt="Second slide">
+												</div>
+											</div>
+											<!--轮播（Carousel）导航 -->
+											<a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+											<a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main container">
+				<div class="w">
+					<!--最近更新应用-->
+					<div class="ApplicationToRecommend">
+						<h3>
+							<strong id="mine_title">最近更新应用</strong>
+							<!-- <span><a href="/apk/update" id="mine_title_right">查看更多</a></span> -->
+						</h3>
+						<div class="applications">
+							<a href="https://gprinter.oss-cn-hangzhou.aliyuncs.com/apk/gprinter-release_506_jiagu_sign.apk">
+								<div class="index_app col-md-2 col-sm-3 col-xs-3">
+									<div class="index_icon">
+										<img src="picture/gprinter.png"></div>
+									<dl>
+										<dd>
+											<span class="sp-name">Gprinter5.0.6</span>
+											<span class="sp-time">2020年5月6日</span>
+										</dd>
+									</dl>
+								</div>
+							</a>
+							<a href="https://gprinter.oss-cn-hangzhou.aliyuncs.com/apk/gprinter-release_505v3_jiagu_sign.apk">
+								<div class="index_app col-md-2 col-sm-3 col-xs-3">
+									<div class="index_icon">
+										<img src="picture/gprinter.png"></div>
+									<dl>
+										<dd>
+											<span class="sp-name">Gprinter5.0.5</span>
+											<span class="sp-time">2020年3月21日</span>
+										</dd>
+									</dl>
+								</div>
+							</a>
+							<a href="https://gprinter.oss-cn-hangzhou.aliyuncs.com/apk/gprinter-release_504_sign.apk">
+								<div class="index_app col-md-2 col-sm-3 col-xs-3">
+									<div class="index_icon">
+										<img src="picture/gprinter.png"></div>
+									<dl>
+										<dd>
+											<span class="sp-name">Gprinter5.0.4</span>
+											<span class="sp-time">2020年1月6日</span>
+										</dd>
+									</dl>
+								</div>
+							</a>
+							<a href="https://gprinter.oss-cn-hangzhou.aliyuncs.com/apk/gprinter-release_503_sign.apk">
+								<div class="index_app col-md-2 col-sm-3 col-xs-3">
+									<div class="index_icon">
+										<img src="picture/gprinter.png"></div>
+									<dl>
+										<dd>
+											<span class="sp-name">Gprinter5.0.3</span>
+											<span class="sp-time">2019年12月31日</span>
+										</dd>
+									</dl>
+								</div>
+							</a>
+							<a href="https://gprinter.oss-cn-hangzhou.aliyuncs.com/apk/gprinter-release_502_sign.apk">
+								<div class="index_app col-md-2 col-sm-3 col-xs-3">
+									<div class="index_icon">
+										<img src="picture/gprinter.png"></div>
+									<dl>
+										<dd>
+											<span class="sp-name">Gprinter5.0.2</span>
+											<span class="sp-time">2019年12月7日</span>
+										</dd>
+									</dl>
+								</div>
+							</a>
+							<a href="https://gprinter.oss-cn-hangzhou.aliyuncs.com/apk/gprinter-release_501_sign.apk">
+								<div class="index_app col-md-2 col-sm-3 col-xs-3">
+									<div class="index_icon">
+										<img src="picture/gprinter.png"></div>
+									<dl>
+										<dd>
+											<span class="sp-name">Gprinter5.0.1</span>
+											<span class="sp-time">2019年11月21日</span>
+										</dd>
+									</dl>
+								</div>
+							</a>
+							<a href="https://gprinter.oss-cn-hangzhou.aliyuncs.com/apk/gprinter-release_50_sign.apk">
+								<div class="index_app col-md-2 col-sm-3 col-xs-3">
+									<div class="index_icon">
+										<img src="picture/gprinter.png"></div>
+									<dl>
+										<dd>
+											<span class="sp-name">Gprinter5.0</span>
+											<span class="sp-time">2019年11月9日</span>
+										</dd>
+									</dl>
+								</div>
+							</a>
+							<a href="https://gprinter.oss-cn-hangzhou.aliyuncs.com/apk/gprinter4.0.4.apk">
+								<div class="index_app col-md-2 col-sm-3 col-xs-3">
+									<div class="index_icon">
+										<img src="picture/gprinter.png"></div>
+									<dl>
+										<dd>
+											<span class="sp-name">Gprinter4.0.4</span>
+											<span class="sp-time">2019年8月20日</span>
+										</dd>
+									</dl>
+								</div>
+							</a>
+							<a href="https://gprinter.oss-cn-hangzhou.aliyuncs.com/apk/gprinter4.0.3.apk">
+								<div class="index_app col-md-2 col-sm-3 col-xs-3">
+									<div class="index_icon">
+										<img src="picture/gprinter.png"></div>
+									<dl>
+										<dd>
+											<span class="sp-name">Gprinter4.0.3</span>
+											<span class="sp-time">更久以前</span>
+										</dd>
+									</dl>
+								</div>
+							</a>
+							<a href="https://gprinter.oss-cn-hangzhou.aliyuncs.com/apk/GPLabelPro2.0.apk">
+								<div class="index_app col-md-2 col-sm-3 col-xs-3">
+									<div class="index_icon">
+										<img src="picture/gprinter_label.png"></div>
+									<dl>
+										<dd>
+											<span class="sp-name">GpLabelPro2.0</span>
+											<span class="sp-time">更久以前</span>
+										</dd>
+									</dl>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<script type="text/javascript">
+				//设置图片切换时间
+				$(".carousel").carousel({
+					interval: 2000
+				})
+			</script>
+			<div class="container">
+				<div class="footer">
+					<div class="w">
+						<div class="footer-links">
+							<a href="http://gainscha.com/about.html">关于Gprinter</a> &middot;
+							<a href="http://m.gainscha.com/contactus.html">联系合作</a> &middot;
+							<a href="">版权声明</a> &middot;
+						</div>
+						<div class="footer-copyright">
+							Copyright &copy; 2010-2018 Gprinter网, All Rights Reserved.
+						</div>
+						<div class="footer-copyright">
+							Gprinter网V8.0 | <a href="http://www.miibeian.gov.cn/" target="_blank" style="color: #999;">粤ICP备xxx</a>
+							|
+							粤网文 [2016] xxx号 | 粤IAS备 xxx | 粤xxx
+						</div>
+						<div class="footer-record">
+							<img src="picture/beian.png"> 粤公网安备xxx号
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="javascript:void(0);" onclick="onDownloadApk(0);">
+			<div class="under">
+				<img src="picture/gprinter.png" class="under_logo">
+				<div class="under_text">
+					<p class="under_title">Gprinter</p>
+					<p class="under_info">简单便捷的打印服务</p>
+				</div>
+				<button class="under_btn">下载最新版APP</button>
+			</div>
+		</a>
+		<script type="text/javascript">
+			function onDownloadApk($downloadId) {
+				if ($downloadId) {
+					window.location.href = "";
+				} else {
+					window.location.href = 'https://gprinter.oss-cn-hangzhou.aliyuncs.com/apk/gprinter-release-latest.apk';
+				}
+			}
+		</script>
+		<script type="text/javascript">
+			$(window).on("load", function() {
+				var winHeight = $(window).height();
+
+				function is_weixin() {
+					var ua = navigator.userAgent.toLowerCase();
+					if (ua.match(/MicroMessenger/i) == "micromessenger") {
+						return true;
+					} else {
+						return false;
+					}
+				}
+				var isWeixin = is_weixin();
+				if (isWeixin) {
+					$(".weixin-tip").css("height", winHeight);
+					$(".weixin-tip").show();
+					$(".header_nav").hide();
+					$(".under").hide();
+					$(".container").hide();
+					onDownloadApk(0);
+				}
+			})
+		</script>
+	</body>
+</html>
