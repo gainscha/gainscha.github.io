@@ -1,311 +1,191 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>佳博打印机开发文档</title>
-  <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: #dfdfdf;
-    }
-
-    .container {
-      background-color: #fff;
-
-    }
-
-    .container-header {
-      display: flex;
-      align-items: center;
-      font-size: 18px;
-      font-weight: bold;
-      height: 50px;
-      padding-left: 10px;
-      color: white;
-      background: rgb(59, 179, 226);
-    }
-
-    .container-body {
-      display: flex;
-      border-top: 1px solid #dfdfdf;
-      padding: 20px 10px 0 10px;
-      /*justify-content: space-between;*/
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    .container div {
-      display: flex;
-    }
-
-    .item-block {
-      border: 1px solid #dfdfdf;
-      flex-direction: column;
-      height: 130px;
-      width: 24%;
-      margin-bottom: 10px;
-      margin-right: 10px;
-    }
-
-    .item-block-wrap {
-      border: 1px solid #dfdfdf;
-      flex-direction: column;
-      height: fit-content;
-      width: 24%;
-      margin-bottom: 10px;
-      margin-right: 10px;
-    }
-
-    a:link {
-      /* 超链接正常状态下的样式 */
-      color: #000000;
-      /* 黑色 */
-      text-decoration: none;
-      /* 无下划线 */
-    }
-
-    a:visited {
-      /* 访问过的超链接 */
-      color: #000000;
-      /* 黑色 */
-      text-decoration: none;
-      /* 无下划线 */
-    }
-
-
-    .item-top {
-      height: 60px;
-      padding: 20px;
-    }
-
-    .item-logo {
-      width: 40px;
-      height: 40px;
-      margin-right: 20px;
-
-    }
-
-    .item-logo img {
-      width: 100%;
-      height: 100%;
-
-    }
-
-    .item-body {
-      flex-direction: column;
-      width: 79%;
-    }
-
-    .item-bottom {
-      height: 40px;
-      justify-content: space-around;
-      align-items: center;
-      color: #888888;
-      background-color: #F7F7F7;
-      font-size: 13px;
-    }
-
-    .title {
-      font-size: 16px;
-      font-weight: bold;
-      padding-bottom: 10px;
-    }
-
-    .notice {
-      font-size: 12px;
-      color: #888;
-    }
-
-    .divider {
-      height: 20px;
-      width: 1px;
-      background-color: #dfdfdf;
-    }
-  </style>
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 
-<body class="body">
-  <div class="container">
-    <div class="container-header">内部系统导航</div>
-    <div class="container-body">
-      <div class="item-block-wrap">
-        <a href="http://www.gainscha.com/" target="_blank">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/gainscha.jpg"></div>
-            <div class="item-body">
-              <span class="title">佳博官网</span>
-              <span class="notice">佳博官网</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="item-block-wrap">
-        <a href="https://cp.poscom.cn/" target="_blank">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/cloud.jpg"></div>
-            <div class="item-body">
-              <span class="title">云打印官网</span>
-              <span class="notice">云打印官网</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="item-block-wrap">
-        <a href="download/" target="_blank">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/gprinter.png"></div>
-            <div class="item-body">
-              <span class="title">Gprinter APP下载</span>
-              <span class="notice">安卓标签编辑、打印</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="item-block-wrap">
-        <a href="https://github.com/gainscha" target="_blank">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/github.jpg"></div>
-            <div class="item-body">
-              <span class="title">Gainscha Github</span>
-              <span class="notice">Github公开代码</span>
-            </div>
-          </div>
-        </a>
-      </div>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: "佳博打印",
+      nameLink: 'http://www.gainscha.com/',
+      repo: 'http://192.168.70.170/android-app/gprintersdk',
+      themeColor: '#007be8', // 主题颜色
+      //loadSidebar: true,//_sidebar.md如果为真，则从_sidebar.md文件加载边栏，否则从指定的路径加载
+      auto2top: true,  //当路线改变时,滚动到屏幕的顶部
+      loadNavbar: false,//_navbar.md如果为真，则从_navbar.md文件加载navbar ，否则从指定的路径加载
+      mergeNavbar: true,//Navbar将在小屏幕上与侧边栏合并
+      executeScript: true,//执行页面上的脚本。只解析第一个脚本标记（演示）。如果存在Vue，则默认开
+      maxLevel: 6,//最大的内容表级别
+      //subMaxLevel: 6,//在自定义边栏中添加目录（TOC)
+      externalLinkTarget: '_blank', //外链打开方式：_blank表示在新标签页中打开
+      coverpage: false,
+      onlyCover: true,
+      topMargin: 60,//调整top
+      //executeScript: true,//执行页面上的脚本，仅解析第一个脚本标签
+      search: {
+        paths: 'auto',
+        placeholder: '🔍 搜索',
+        noData: '😒 找不到结果',
+        // Headline depth, 1 - 6
+        depth: 6,
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+      },//添加搜索框
 
-      <div class="item-block-wrap">
-        <a href="http://cloud.poscom.cn/demo/?tdsourcetag=s_pcqq_aiomsg" target="_blank">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/cloud.jpg"></div>
-            <div class="item-body">
-              <span class="title">云打印在线测试工具</span>
-              <span class="notice">云打印在线测试工具</span>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
+      markdown: {
+        renderer: {
+          code: function (code, lang, base = null) {
 
+            if (lang === "dot") {
+              return (
+                '<div class="viz">' + Viz(code, "SVG") + '</div>'
+              );
+            }
 
-  <div class="container">
-    <div class="container-header">开发文档</div>
-    <div class="container-body">
-      <div class="item-block" style="height: fit-content;">
-        <a href="docs/print-tspl/" target="_blank">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/spug.png"></div>
-            <div class="item-body">
-              <span class="title">标签指令文档</span>
-              <span class="notice">TSPL指令</span>
-            </div>
-          </div>
-        </a>
-        <div class="item-bottom">
-          <a href="" target="_blank">
-            <div>特殊指令</div>
-          </a>
-        </div>
-      </div>
+            var pdf_renderer = function (code, lang, verify) {
+              function unique_id_generator() {
+                function rand_gen() {
+                  return Math.floor((Math.random() + 1) * 65536).toString(16).substring(1);
+                }
+                return rand_gen() + rand_gen() + '-' + rand_gen() + '-' + rand_gen() + '-' + rand_gen() + '-' + rand_gen() + rand_gen() + rand_gen();
+              }
+              if (lang && !lang.localeCompare('pdf', 'en', { sensitivity: 'base' })) {
+                if (verify) {
+                  return true;
+                } else {
+                  var divId = "markdown_code_pdf_container_" + unique_id_generator().toString();
+                  var container_list = new Array();
+                  if (localStorage.getItem('pdf_container_list')) {
+                    container_list = JSON.parse(localStorage.getItem('pdf_container_list'));
+                  }
+                  container_list.push({ "pdf_location": code, "div_id": divId });
+                  localStorage.setItem('pdf_container_list', JSON.stringify(container_list));
+                  return (
+                    '<div style="margin-top:' + PDF_MARGIN_TOP + '; margin-bottom:' + PDF_MARGIN_BOTTOM + ';" id="' + divId + '">'
+                    + '<a href="' + code + '"> Link </a> to ' + code +
+                    '</div>'
+                  );
+                }
+              }
+              return false;
+            }
+            if (pdf_renderer(code, lang, true)) {
+              return pdf_renderer(code, lang, false);
+            }
+            //return this.origin.code.apply(this, arguments);
+            return (base ? base : this.origin.code.apply(this, arguments));
+          }
+        }
+      },
 
-      <div class="item-block" style="height: fit-content;">
-        <a href="docs/print-esc/" target="_blank">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/spug.png"></div>
-            <div class="item-body">
-              <span class="title">小票指令文档</span>
-              <span class="notice">ESC指令</span>
-            </div>
-          </div>
-        </a>
-        <div class="item-bottom">
-          <a href="" target="_blank">
-            <div>特殊指令</div>
-          </a>
-        </div>
-      </div>
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/zoom-image.min.js"></script>
 
-      <div class="item-block">
-        <a href="docs/print-cpcl/" target="_blank">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/spug.png"></div>
-            <div class="item-body">
-              <span class="title">面单指令文档</span>
-              <span class="notice">CPCL指令</span>
-            </div>
-          </div>
-        </a>
-        <div class="item-bottom">
-          <a href="" target="_blank">
-            <div>特殊指令</div>
-          </a>
-        </div>
-      </div>
+  <!-- 支持 DOT 语言 -->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/viz.js"></script>
+  <!-- 支持 LaTex 语言 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
 
-      <div class="item-block">
-        <a href="docs/print-zpl/" target="_blank">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/spug.png"></div>
-            <div class="item-body">
-              <span class="title">斑马指令文档</span>
-              <span class="notice">ZPL指令</span>
-            </div>
-          </div>
-        </a>
-        <div class="item-bottom">
-          <a href="" target="_blank">
-            <div>特殊指令</div>
-          </a>
-        </div>
-      </div>
+  <!-- 添加 PDF 页面展示功能 -->
+  <!-- PDFObject.js is a required dependency of this plugin -->
+  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/pdfobject.min.js"></script>
+  <!-- This is the source code of the pdf embed plugin -->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/docsify-pdf-embed.js"></script>
 
-      <div class="item-block">
-        <a href="docs/android-sdk2/index.html" target="_blank">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/android.jpg"></div>
-            <div class="item-body">
-              <span class="title">安卓打印SDK使用说明</span>
-              <span class="notice">SDK使用说明令</span>
-            </div>
-          </div>
-        </a>
-        <div class="item-bottom">
-          <a href="https://github.com/gainscha" target="_blank">
-            <div>Demo代码</div>
-          </a>
-          <div class="divider"></div>
-          <a href="docs/android-sdk2/reference/" target="_blank">
-            <div>参考文档</div>
-          </a>
-        </div>
-      </div>
+  <!-- 回到顶部功能 -->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.goup({
+        trigger: 100,
+        bottomOffset: 52,
+        locationOffset: 25,
+        //title: 'TOP',
+        titleAsText: true
+      });
+    });
+  </script>
 
-      <div class="item-block">
-        <a href="docs/ios-sdk/" target="_blank">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/ios.jpg"></div>
-            <div class="item-body">
-              <span class="title">IOS打印SDK使用说明</span>
-              <span class="notice">SDK使用说明</span>
-            </div>
-          </div>
-        </a>
-        <div class="item-bottom">
-          <a href="https://github.com/gainscha" target="_blank">
-            <div>Demo代码</div>
-          </a>
-          <div class="divider"></div>
-          <a href="docs/ios-sdk/reference/" target="_blank">
-            <div>参考文档</div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+  <!-- 代码块样式优化-->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-c.js"></script>
+  <!--<script src="//unpkg.com/prismjs/components/prism-cpp.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-cpp.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-css.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-docker.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-java.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-javascript.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-json.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-latex.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-sql.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-php.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-scala.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-nginx.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-json.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-markdown.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/prism-python.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/js/prism-yaml.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/StaticRepo/src/js/prism-go.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/StaticRepo/src/js/prism-matlab.js"></script>
+
+  <!-- mouse click -->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/click_heart.js"></script>
+
+  <!-- 添加页脚 -->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/docsify-footer-enh.min.js"></script>
+
+  <!-- 可爱小萝莉 -->
+  <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+  <script>
+    L2Dwidget.init({
+      "model": {
+        //jsonpath控制显示那个小萝莉模型，
+        //(切换模型需要改动)
+        jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+        "scale": 1
+      },
+      "display": {
+        "position": "right", //看板娘的表现位置
+        "width": 70,  //小萝莉的宽度
+        "height": 140, //小萝莉的高度
+        "hOffset": 35,
+        "vOffset": -20
+      },
+      "mobile": {
+        "show": true,
+        "scale": 0.5
+      },
+      "react": {
+        "opacityDefault": 0.7,
+        "opacityOnHover": 0.2
+      }
+    });
+  </script>
+  <!-- 访问量统计 -->
+  <script async src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/js/busuanzi.pure.mini.js"></script>
+
+  <!-- 实现离线化 -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('pwa.js')
+    }
+  </script>
+
+<script src="//docs.gainscha.com:35729/livereload.js?snipver=1" async="" defer=""></script></body>
 
 </html>
