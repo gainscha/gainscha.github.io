@@ -1,0 +1,14 @@
+com.gainscha.sdk2
+com.gainscha.sdk2.command
+com.gainscha.sdk2.command.zpl
+com.gainscha.sdk2.internal
+com.gainscha.sdk2.internal.command
+com.gainscha.sdk2.internal.command.udp
+com.gainscha.sdk2.internal.connection
+com.gainscha.sdk2.internal.model
+com.gainscha.sdk2.label
+com.gainscha.sdk2.model
+com.gainscha.sdk2.ui
+com.gainscha.sdk2.ui.adapter
+com.gainscha.sdk2.ui.dialog
+com.gainscha.sdk2.util
