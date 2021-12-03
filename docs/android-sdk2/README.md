@@ -56,7 +56,7 @@ repositories {
 
 ```gradle
 dependencies {
-    implementation 'com.gainscha:sdk2:1.0.3'
+    implementation 'com.gainscha:sdk2:1.0.5'
 }
 ```
 
@@ -375,6 +375,57 @@ public static byte[] getESCChinese(Context context){
 测试内容打印结果如下
 
 ：![在这里插入图片描述](https://img-blog.csdnimg.cn/20190823101247931.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTIxODQ1Mzk=,size_16,color_FFFFFF,t_70)
+
+
+
+## 4.2.4 GP-76系列针式打印
+
+```java
+public void print(){
+    Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.man);
+    bitmap = BitmapUtil.resizeBitmap(bitmap, 200, (int) (bitmap.getHeight() * 200f / bitmap.getWidth()));
+    //使用针打的指令集EscForDotPrinter
+    EscForDotPrinter esc = new EscForDotPrinter();
+    //初始化打印机（必须添加）
+    esc.initPrinter();
+    esc.setAlign(Esc.ALIGN_CENTER);
+    esc.addText("GP-7645打印测试\n");
+    esc.setAlign(Esc.ALIGN_LEFT);
+    esc.addText("0123456789\n");
+    esc.addText("abcdefg\n");
+    esc.setTextFont(Esc.TEXT_FONT_16_PX);
+    esc.addText("16号字体\n");
+    esc.setTextFont(Esc.TEXT_FONT_24_PX);
+    esc.addText("21号字体\n");
+    esc.setTextBold(true);
+    esc.addText("加粗\n");
+    esc.setTextBold(false);
+    esc.setTextHeavy(true);
+    esc.addText("加重\n");
+    esc.setTextHeavy(false);
+    esc.setTextUnderLine(Esc.TEXT_UNDERLINE_1_PX);
+    esc.addText("下划线1\n");
+    esc.setTextUnderLine(Esc.TEXT_UNDERLINE_2_PX);
+    esc.addText("下划线2\n");
+    esc.setTextUnderLine(Esc.TEXT_UNDERLINE_NONE);
+    //打印条码
+    esc.addBarcode(Esc.BARCODE_CODE128, 120, 60, true, 20, "12345678");
+    //打印二维码
+    esc.addQrcode(60, 60, "Gprinter");
+    //走纸2行
+    esc.printAndFeedLines(2);
+    //打印图片
+    esc.addBitmap(bitmap, true);
+    try {
+        byte[] data = esc.getData();
+        printer.print(data);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}
+```
+
+ ![](https://cdn.jsdelivr.net/gh/mxxlei/pictures-bed@master/2021/16385193210171638519320998.png)
 
 # 5. 搜索打印机
 
