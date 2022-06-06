@@ -56,7 +56,7 @@ repositories {
 
 ```gradle
 dependencies {
-    implementation 'com.gainscha:sdk2:1.0.5'
+    implementation 'com.gainscha:sdk2:1.0.6'
 }
 ```
 
