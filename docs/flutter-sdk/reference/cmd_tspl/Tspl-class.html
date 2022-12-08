@@ -1,0 +1,2078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the Tspl class from the tspl library, for the Dart programming language.">
+  <title>Tspl class - tspl library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">printersdk</a></li>
+    <li><a href="../cmd_tspl/cmd_tspl-library.html">tspl</a></li>
+    <li class="self-crumb">Tspl class</li>
+  </ol>
+  <div class="self-name">Tspl</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">Tspl</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+
+
+    <section>
+      <dl class="dl-horizontal">
+        
+  <dt>Inheritance</dt>
+  <dd>
+    <ul class="gt-separated dark clazz-relationships">
+      <li><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></li>
+        <li><a href="../cmd_print_cmd/PrintCmd-class.html">PrintCmd</a></li>
+      <li>Tspl</li>
+    </ul>
+  </dd>
+
+        
+        
+
+
+
+        
+      </dl>
+    </section>
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="Tspl" class="callable">
+          <span class="name"><a href="../cmd_tspl/Tspl/Tspl.html">Tspl</a></span><span class="signature">(<span class="parameter" id="-param-width"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">width</span>, </span><span class="parameter" id="-param-height"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">height</span></span>)</span>
+        </dt>
+        <dd>
+          
+            <div class="constructor-modifier features">factory</div>
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor inherited" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="addBarcode" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addBarcode.html">addBarcode</a></span><span class="signature">(<wbr><span class="parameter" id="addBarcode-param-x">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="addBarcode-param-y"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span>, </span><span class="parameter" id="addBarcode-param-text"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">text</span>, </span><span class="parameter" id="addBarcode-param-height"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">height</span>, </span><span class="parameter" id="addBarcode-param-barcodeType"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">barcodeType</span> = <span class="default-value">barcodeCode128</span>, </span><span class="parameter" id="addBarcode-param-rotation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">rotation</span> = <span class="default-value">0</span>, </span><span class="parameter" id="addBarcode-param-narrowUnit"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">narrowUnit</span> = <span class="default-value">2</span>, </span><span class="parameter" id="addBarcode-param-widthUnit"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">widthUnit</span> = <span class="default-value">2</span>, </span><span class="parameter" id="addBarcode-param-showHumanReadText"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">showHumanReadText</span> = <span class="default-value">false</span>}</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  添加条码
+<code>x</code> 起点X坐标
+<code>y</code> 起点Y坐标
+<code>text</code> 内容
+<code>barcodeType</code> 条码类型
+<code>height</code> 条码高度
+<code>rotation</code> 旋转角度
+<code>narrowUnit</code> 窄条
+<code>widthUnit</code> 宽条
+<code>showHumanReadText</code> 显示文本
+  
+
+</dd>
+
+        <dt id="addBitmap" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addBitmap.html">addBitmap</a></span><span class="signature">(<wbr><span class="parameter" id="addBitmap-param-x">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="addBitmap-param-y"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span>, </span><span class="parameter" id="addBitmap-param-bitmap"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/painting/ImageProvider-class.html">ImageProvider</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span> <span class="parameter-name">bitmap</span>, </span><span class="parameter" id="addBitmap-param-bitmapWidth"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">bitmapWidth</span>, </span><span class="parameter" id="addBitmap-param-mode"><span class="type-annotation"><a href="../cmd_tspl/BlendMode.html">BlendMode</a></span> <span class="parameter-name">mode</span> = <span class="default-value">BlendMode.over</span>, </span><span class="parameter" id="addBitmap-param-compress"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">compress</span> = <span class="default-value">false</span>, </span><span class="parameter" id="addBitmap-param-dither"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">dither</span> = <span class="default-value">false</span>}</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  添加图片
+  
+
+</dd>
+
+        <dt id="addBmpFile" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addBmpFile.html">addBmpFile</a></span><span class="signature">(<wbr><span class="parameter" id="addBmpFile-param-x"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="addBmpFile-param-y"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span>, </span><span class="parameter" id="addBmpFile-param-fileName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fileName</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  从打印机内存读取bmp图片
+  
+
+</dd>
+
+        <dt id="addBox" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addBox.html">addBox</a></span><span class="signature">(<wbr><span class="parameter" id="addBox-param-x1"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x1</span>, </span><span class="parameter" id="addBox-param-y1"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y1</span>, </span><span class="parameter" id="addBox-param-x2"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x2</span>, </span><span class="parameter" id="addBox-param-y2"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y2</span>, </span><span class="parameter" id="addBox-param-lineWidth"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">lineWidth</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  添加矩形
+  
+
+</dd>
+
+        <dt id="addByte" class="callable inherited">
+  <span class="name"><a href="../cmd_print_cmd/PrintCmd/addByte.html">addByte</a></span><span class="signature">(<wbr><span class="parameter" id="addByte-param-byte"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">byte</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  添加一个字节
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="addBytes" class="callable inherited">
+  <span class="name"><a href="../cmd_print_cmd/PrintCmd/addBytes.html">addBytes</a></span><span class="signature">(<wbr><span class="parameter" id="addBytes-param-bytes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span> <span class="parameter-name">bytes</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  添加字节数组
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="addLine" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addLine.html">addLine</a></span><span class="signature">(<wbr><span class="parameter" id="addLine-param-x"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="addLine-param-y"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span>, </span><span class="parameter" id="addLine-param-width"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">width</span>, </span><span class="parameter" id="addLine-param-height"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">height</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  添加线段
+  
+
+</dd>
+
+        <dt id="addPcxFile" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addPcxFile.html">addPcxFile</a></span><span class="signature">(<wbr><span class="parameter" id="addPcxFile-param-x"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="addPcxFile-param-y"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span>, </span><span class="parameter" id="addPcxFile-param-fileName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fileName</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  从打印机内存读取pcx图片
+  
+
+</dd>
+
+        <dt id="addQrcode" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addQrcode.html">addQrcode</a></span><span class="signature">(<wbr><span class="parameter" id="addQrcode-param-x">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="addQrcode-param-y"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span>, </span><span class="parameter" id="addQrcode-param-text"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">text</span>, </span><span class="parameter" id="addQrcode-param-errorLevel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">errorLevel</span> = <span class="default-value">qrcodeErrorLevelM</span>, </span><span class="parameter" id="addQrcode-param-cellWidth"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">cellWidth</span> = <span class="default-value">4</span>, </span><span class="parameter" id="addQrcode-param-rotation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">rotation</span> = <span class="default-value">0</span>}</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  添加二维码
+  
+
+</dd>
+
+        <dt id="addQueryPrinterCodePage" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addQueryPrinterCodePage.html">addQueryPrinterCodePage</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  查询打印机代码页
+  
+
+</dd>
+
+        <dt id="addQueryPrinterFile" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addQueryPrinterFile.html">addQueryPrinterFile</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  查询打印机存储的文档
+  
+
+</dd>
+
+        <dt id="addQueryPrinterMemory" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addQueryPrinterMemory.html">addQueryPrinterMemory</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  查询打印机内存
+  
+
+</dd>
+
+        <dt id="addQueryPrinterModel" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addQueryPrinterModel.html">addQueryPrinterModel</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  获取打印机型号
+  
+
+</dd>
+
+        <dt id="addQueryPrinterStatus" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addQueryPrinterStatus.html">addQueryPrinterStatus</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  获取打印机状态
+  
+
+</dd>
+
+        <dt id="addQueryPrinterTotalFeed" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addQueryPrinterTotalFeed.html">addQueryPrinterTotalFeed</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  获取打印机总打印里程
+  
+
+</dd>
+
+        <dt id="addSelfTest" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addSelfTest.html">addSelfTest</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  打印自检页
+  
+
+</dd>
+
+        <dt id="addString" class="callable inherited">
+  <span class="name"><a href="../cmd_print_cmd/PrintCmd/addString.html">addString</a></span><span class="signature">(<wbr><span class="parameter" id="addString-param-str"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">str</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  添加字符串
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="addText" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addText.html">addText</a></span><span class="signature">(<wbr><span class="parameter" id="addText-param-x">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="addText-param-y"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span>, </span><span class="parameter" id="addText-param-text"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">text</span>, </span><span class="parameter" id="addText-param-fontType"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fontType</span> = <span class="default-value">&quot;0&quot;</span>, </span><span class="parameter" id="addText-param-rotation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">rotation</span> = <span class="default-value">0</span>, </span><span class="parameter" id="addText-param-fontMultiply"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">fontMultiply</span> = <span class="default-value">1</span>}</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  添加文本
+  
+
+</dd>
+
+        <dt id="addTextByBitmap" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/addTextByBitmap.html">addTextByBitmap</a></span><span class="signature">(<wbr><span class="parameter" id="addTextByBitmap-param-x">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="addTextByBitmap-param-y"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span>, </span><span class="parameter" id="addTextByBitmap-param-text"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">text</span>, </span><span class="parameter" id="addTextByBitmap-param-fontFamily"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fontFamily</span> = <span class="default-value">&quot;0&quot;</span>, </span><span class="parameter" id="addTextByBitmap-param-rotation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">rotation</span> = <span class="default-value">0</span>, </span><span class="parameter" id="addTextByBitmap-param-fontSize"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">fontSize</span> = <span class="default-value">16</span>}</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  以图片的方式打印文本
+  
+
+</dd>
+
+        <dt id="beep" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/beep.html">beep</a></span><span class="signature">(<wbr><span class="parameter" id="beep-param-level"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">level</span>, </span><span class="parameter" id="beep-param-interval"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">interval</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  蜂鸣器发声
+  
+
+</dd>
+
+        <dt id="clear" class="callable inherited">
+  <span class="name"><a href="../cmd_print_cmd/PrintCmd/clear.html">clear</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  清除缓冲
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="clearPrinterBuffer" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/clearPrinterBuffer.html">clearPrinterBuffer</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  清除打印缓冲区
+  
+
+</dd>
+
+        <dt id="clearPrinterBufferArea" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/clearPrinterBufferArea.html">clearPrinterBufferArea</a></span><span class="signature">(<wbr><span class="parameter" id="clearPrinterBufferArea-param-x"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="clearPrinterBufferArea-param-y"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span>, </span><span class="parameter" id="clearPrinterBufferArea-param-width"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">width</span>, </span><span class="parameter" id="clearPrinterBufferArea-param-height"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">height</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  清除打印机缓冲区部分区域的数据（区域内数据变为0,不参与打印）
+  
+
+</dd>
+
+        <dt id="deleteFile" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/deleteFile.html">deleteFile</a></span><span class="signature">(<wbr><span class="parameter" id="deleteFile-param-fileName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fileName</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  从打印机内存删除下载的文件
+  
+
+</dd>
+
+        <dt id="downloadBmpFile" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/downloadBmpFile.html">downloadBmpFile</a></span><span class="signature">(<wbr><span class="parameter" id="downloadBmpFile-param-bitmap"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/painting/ImageProvider-class.html">ImageProvider</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span> <span class="parameter-name">bitmap</span>, </span><span class="parameter" id="downloadBmpFile-param-fileName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fileName</span>, </span><span class="parameter" id="downloadBmpFile-param-bitmapWidth"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">bitmapWidth</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  下载bmp图片文件打印机内存
+  
+
+</dd>
+
+        <dt id="downloadDataFile" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/downloadDataFile.html">downloadDataFile</a></span><span class="signature">(<wbr><span class="parameter" id="downloadDataFile-param-fileName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fileName</span>, </span><span class="parameter" id="downloadDataFile-param-data"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> <span class="parameter-name">data</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  下载数据文件到打印机RAM
+  
+
+</dd>
+
+        <dt id="downloadProgramFile" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/downloadProgramFile.html">downloadProgramFile</a></span><span class="signature">(<wbr><span class="parameter" id="downloadProgramFile-param-fileName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fileName</span>, </span><span class="parameter" id="downloadProgramFile-param-data"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> <span class="parameter-name">data</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  下载程序文件到打印机RAM
+  
+
+</dd>
+
+        <dt id="feedPaper" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/feedPaper.html">feedPaper</a></span><span class="signature">(<wbr><span class="parameter" id="feedPaper-param-distance"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">distance</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  走纸<code>distance</code>个点
+  
+
+</dd>
+
+        <dt id="feedPaperBackward" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/feedPaperBackward.html">feedPaperBackward</a></span><span class="signature">(<wbr><span class="parameter" id="feedPaperBackward-param-distance"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">distance</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  退纸<code>distance</code>个点
+  
+
+</dd>
+
+        <dt id="feedPaperOneLabel" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/feedPaperOneLabel.html">feedPaperOneLabel</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  走一张标签纸
+  
+
+</dd>
+
+        <dt id="feedPaperToNextLabel" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/feedPaperToNextLabel.html">feedPaperToNextLabel</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  走纸到下一张标签的起点
+  
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed.
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="print" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/print.html">print</a></span><span class="signature">(<wbr><span class="parameter" id="print-param-printCount"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">printCount</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  打印标签<code>printCount</code>份
+  
+
+</dd>
+
+        <dt id="print2" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/print2.html">print2</a></span><span class="signature">(<wbr><span class="parameter" id="print2-param-printCount"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">printCount</span>, </span><span class="parameter" id="print2-param-repeatCountPerLabel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">repeatCountPerLabel</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  打印标签
+  
+
+</dd>
+
+        <dt id="rangeLimit" class="callable inherited">
+  <span class="name"><a href="../cmd_print_cmd/PrintCmd/rangeLimit.html">rangeLimit</a></span><span class="signature">(<wbr><span class="parameter" id="rangeLimit-param-value"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">value</span>, </span><span class="parameter" id="rangeLimit-param-minInclusive"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">minInclusive</span>, </span><span class="parameter" id="rangeLimit-param-maxInclusive"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">maxInclusive</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="reversePrinterBufferArea" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/reversePrinterBufferArea.html">reversePrinterBufferArea</a></span><span class="signature">(<wbr><span class="parameter" id="reversePrinterBufferArea-param-x"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="reversePrinterBufferArea-param-y"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span>, </span><span class="parameter" id="reversePrinterBufferArea-param-width"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">width</span>, </span><span class="parameter" id="reversePrinterBufferArea-param-height"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">height</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  反转打印机缓冲区部分区域的数据(区域内数据取反)
+  
+
+</dd>
+
+        <dt id="runProgramFile" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/runProgramFile.html">runProgramFile</a></span><span class="signature">(<wbr><span class="parameter" id="runProgramFile-param-fileName"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">fileName</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  运行打印机内存中的程序文件
+  
+
+</dd>
+
+        <dt id="setAxisOrigin" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setAxisOrigin.html">setAxisOrigin</a></span><span class="signature">(<wbr><span class="parameter" id="setAxisOrigin-param-x"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">x</span>, </span><span class="parameter" id="setAxisOrigin-param-y"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">y</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置坐标系原点位置
+  
+
+</dd>
+
+        <dt id="setBlackColorDensity" class="callable inherited">
+  <span class="name"><a href="../cmd_print_cmd/PrintCmd/setBlackColorDensity.html">setBlackColorDensity</a></span><span class="signature">(<wbr><span class="parameter" id="setBlackColorDensity-param-density"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">density</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  设置黑色打印浓度
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="setBlineGap" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setBlineGap.html">setBlineGap</a></span><span class="signature">(<wbr><span class="parameter" id="setBlineGap-param-gap"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">gap</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置黑标间隙为<code>gap</code>毫米
+  
+
+</dd>
+
+        <dt id="setCodePage" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setCodePage.html">setCodePage</a></span><span class="signature">(<wbr><span class="parameter" id="setCodePage-param-codePage"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">codePage</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置国际代码页
+  
+
+</dd>
+
+        <dt id="setCutter" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setCutter.html">setCutter</a></span><span class="signature">(<wbr><span class="parameter" id="setCutter-param-enable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enable</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置打印后切纸
+  
+
+</dd>
+
+        <dt id="setCutterAtPrintCount" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setCutterAtPrintCount.html">setCutterAtPrintCount</a></span><span class="signature">(<wbr><span class="parameter" id="setCutterAtPrintCount-param-cutAtPrintCount"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">cutAtPrintCount</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置打印后切纸
+  
+
+</dd>
+
+        <dt id="setCutterBatch" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setCutterBatch.html">setCutterBatch</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  打印命令完成后切纸张（一个打印命令可能会打印多份）
+  
+
+</dd>
+
+        <dt id="setCutterPartial" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setCutterPartial.html">setCutterPartial</a></span><span class="signature">(<wbr><span class="parameter" id="setCutterPartial-param-enable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enable</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置切刀半切
+  
+
+</dd>
+
+        <dt id="setGap" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setGap.html">setGap</a></span><span class="signature">(<wbr><span class="parameter" id="setGap-param-gap"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">gap</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置标签间隙为<code>gap</code>毫米
+  
+
+</dd>
+
+        <dt id="setMaxFeedPaperOnFindLabelStart" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setMaxFeedPaperOnFindLabelStart.html">setMaxFeedPaperOnFindLabelStart</a></span><span class="signature">(<wbr><span class="parameter" id="setMaxFeedPaperOnFindLabelStart-param-maxFeed"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">maxFeed</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置寻找标签起点时走纸最大距离<code>maxFeed</code>点
+  
+
+</dd>
+
+        <dt id="setPaperOffsetAfterPrint" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setPaperOffsetAfterPrint.html">setPaperOffsetAfterPrint</a></span><span class="signature">(<wbr><span class="parameter" id="setPaperOffsetAfterPrint-param-offset"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">offset</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置打印完成后标签偏移位置<code>offset</code>毫米
+  
+
+</dd>
+
+        <dt id="setPrintColor" class="callable inherited">
+  <span class="name"><a href="../cmd_print_cmd/PrintCmd/setPrintColor.html">setPrintColor</a></span><span class="signature">(<wbr><span class="parameter" id="setPrintColor-param-printColor"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">printColor</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  设置打印颜色
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="setPrintDensity" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setPrintDensity.html">setPrintDensity</a></span><span class="signature">(<wbr><span class="parameter" id="setPrintDensity-param-density"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">density</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置打印浓度<code>density</code>，范围1-15
+  
+
+</dd>
+
+        <dt id="setPrintDirection" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setPrintDirection.html">setPrintDirection</a></span><span class="signature">(<wbr><span class="parameter" id="setPrintDirection-param-horizontalMirror"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">horizontalMirror</span>, </span><span class="parameter" id="setPrintDirection-param-verticalReverse"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">verticalReverse</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置打印方向
+  
+
+</dd>
+
+        <dt id="setPrinterDoubleColorMode" class="callable inherited">
+  <span class="name"><a href="../cmd_print_cmd/PrintCmd/setPrinterDoubleColorMode.html">setPrinterDoubleColorMode</a></span><span class="signature">(<wbr><span class="parameter" id="setPrinterDoubleColorMode-param-enable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enable</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  设置双色打印开关
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="setPrinterPeel" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setPrinterPeel.html">setPrinterPeel</a></span><span class="signature">(<wbr><span class="parameter" id="setPrinterPeel-param-enable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enable</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置剥离模式
+  
+
+</dd>
+
+        <dt id="setPrintKey" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setPrintKey.html">setPrintKey</a></span><span class="signature">(<wbr><span class="parameter" id="setPrintKey-param-enable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enable</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置按键打印是否有效
+  
+
+</dd>
+
+        <dt id="setPrintKeyPrintCount" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setPrintKeyPrintCount.html">setPrintKeyPrintCount</a></span><span class="signature">(<wbr><span class="parameter" id="setPrintKeyPrintCount-param-count"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">count</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置按键打印份数
+  
+
+</dd>
+
+        <dt id="setPrintSpeed" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setPrintSpeed.html">setPrintSpeed</a></span><span class="signature">(<wbr><span class="parameter" id="setPrintSpeed-param-speed"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">speed</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置打印速度<code>speed</code>英寸/秒，范围1-15
+  
+
+</dd>
+
+        <dt id="setRedColorDensity" class="callable inherited">
+  <span class="name"><a href="../cmd_print_cmd/PrintCmd/setRedColorDensity.html">setRedColorDensity</a></span><span class="signature">(<wbr><span class="parameter" id="setRedColorDensity-param-density"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">density</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  设置红色打印浓度
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="setReprintOnError" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setReprintOnError.html">setReprintOnError</a></span><span class="signature">(<wbr><span class="parameter" id="setReprintOnError-param-enable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enable</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置打印出错后重新打印(如打印过程中开盖、缺纸)
+  
+
+</dd>
+
+        <dt id="setResponseAfterPrint" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setResponseAfterPrint.html">setResponseAfterPrint</a></span><span class="signature">(<wbr><span class="parameter" id="setResponseAfterPrint-param-mode"><span class="type-annotation"><a href="../cmd_tspl/ResponsMode.html">ResponsMode</a></span> <span class="parameter-name">mode</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置打印完成后自动返回状态
+  
+
+</dd>
+
+        <dt id="setTear" class="callable">
+  <span class="name"><a href="../cmd_tspl/Tspl/setTear.html">setTear</a></span><span class="signature">(<wbr><span class="parameter" id="setTear-param-enable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enable</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  设置撕离模式
+  
+
+</dd>
+
+        <dt id="toBytes" class="callable inherited">
+  <span class="name"><a href="../cmd_print_cmd/PrintCmd/toBytes.html">toBytes</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  获取缓冲
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features">inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features">inherited</div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+  <section class="summary offset-anchor" id="constants">
+    <h2>Constants</h2>
+
+    <dl class="properties">
+        <dt id="barcode25" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcode25-constant.html">barcode25</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;25&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcode25C" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcode25C-constant.html">barcode25C</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;25C&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeChinaPostCode" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeChinaPostCode-constant.html">barcodeChinaPostCode</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;CPOST&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeCodabar" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeCodabar-constant.html">barcodeCodabar</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;CODA&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeCode39" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeCode39-constant.html">barcodeCode39</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;39&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeCode39C" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeCode39C-constant.html">barcodeCode39C</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;39C&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeCode39S" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeCode39S-constant.html">barcodeCode39S</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;39S&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeCode93" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeCode93-constant.html">barcodeCode93</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;93&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeCode128" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeCode128-constant.html">barcodeCode128</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;128&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeCode128M" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeCode128M-constant.html">barcodeCode128M</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;128M&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeCodeEAN128" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeCodeEAN128-constant.html">barcodeCodeEAN128</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;EAN128&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeEAN8" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeEAN8-constant.html">barcodeEAN8</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;EAN8&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeEAN8Plus2" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeEAN8Plus2-constant.html">barcodeEAN8Plus2</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;EAN8+2&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeEAN8Plus5" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeEAN8Plus5-constant.html">barcodeEAN8Plus5</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;EAN8+5&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeEAN13" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeEAN13-constant.html">barcodeEAN13</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;EAN13&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeEAN13Plus2" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeEAN13Plus2-constant.html">barcodeEAN13Plus2</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;EAN13+2&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeEAN13Plus5" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeEAN13Plus5-constant.html">barcodeEAN13Plus5</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;EAN13+5&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeEAN14" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeEAN14-constant.html">barcodeEAN14</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;EAN14&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeITF14" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeITF14-constant.html">barcodeITF14</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;ITF14&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeMsi" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeMsi-constant.html">barcodeMsi</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;MSI&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeMsiC" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeMsiC-constant.html">barcodeMsiC</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;MSIC&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodePlessey" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodePlessey-constant.html">barcodePlessey</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;PLESSEY&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeUPCA" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeUPCA-constant.html">barcodeUPCA</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;UPCA&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeUPCAPlus2" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeUPCAPlus2-constant.html">barcodeUPCAPlus2</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;UPCA+2&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeUPCAPlus5" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeUPCAPlus5-constant.html">barcodeUPCAPlus5</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;UPCA+5&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeUPCE" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeUPCE-constant.html">barcodeUPCE</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;UPCE&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeUPCEPlus2" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeUPCEPlus2-constant.html">barcodeUPCEPlus2</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;UPCE+2&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="barcodeUPCEPlus5" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/barcodeUPCEPlus5-constant.html">barcodeUPCEPlus5</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;UPCE+5&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageArabic" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageArabic-constant.html">codePageArabic</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;Arabic&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageCanadianOrFrench" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageCanadianOrFrench-constant.html">codePageCanadianOrFrench</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;863&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageCentralEurope" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageCentralEurope-constant.html">codePageCentralEurope</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;1250&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageCyrillic" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageCyrillic-constant.html">codePageCyrillic</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;866&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageEastEurope" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageEastEurope-constant.html">codePageEastEurope</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;EastEurope&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageGreek" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageGreek-constant.html">codePageGreek</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;1253&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageGreek2" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageGreek2-constant.html">codePageGreek2</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;Greek&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageHebrew" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageHebrew-constant.html">codePageHebrew</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;Hebrew&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageIran" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageIran-constant.html">codePageIran</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;Iran&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageIran2" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageIran2-constant.html">codePageIran2</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;Iran2&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageLatin1" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageLatin1-constant.html">codePageLatin1</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;1252&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageLatvian" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageLatvian-constant.html">codePageLatvian</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;Latvian&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageMultilinggual" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageMultilinggual-constant.html">codePageMultilinggual</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;850&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageNordic" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageNordic-constant.html">codePageNordic</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;865&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePagePC747" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePagePC747-constant.html">codePagePC747</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;747&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePagePC858" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePagePC858-constant.html">codePagePC858</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;858&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePagePC864" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePagePC864-constant.html">codePagePC864</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;864&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePagePC1001" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePagePC1001-constant.html">codePagePC1001</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;1001&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePagePortuguese" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePagePortuguese-constant.html">codePagePortuguese</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;860&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageSlavic" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageSlavic-constant.html">codePageSlavic</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;852&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageThai" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageThai-constant.html">codePageThai</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;Thai&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageTurkish" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageTurkish-constant.html">codePageTurkish</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;1254&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageUs" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageUs-constant.html">codePageUs</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;437&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageUygur" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageUygur-constant.html">codePageUygur</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;Uygur&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageVietnam" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageVietnam-constant.html">codePageVietnam</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;Vietnam&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageWestEurope" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageWestEurope-constant.html">codePageWestEurope</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;WestEurope&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageWPC1251" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageWPC1251-constant.html">codePageWPC1251</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;1251&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="codePageWPC1257" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/codePageWPC1257-constant.html">codePageWPC1257</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;1257&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="qrcodeErrorLevelH" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/qrcodeErrorLevelH-constant.html">qrcodeErrorLevelH</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;H&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="qrcodeErrorLevelL" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/qrcodeErrorLevelL-constant.html">qrcodeErrorLevelL</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;L&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="qrcodeErrorLevelM" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/qrcodeErrorLevelM-constant.html">qrcodeErrorLevelM</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;M&quot;</code></span>
+  </div>
+</dd>
+
+        <dt id="qrcodeErrorLevelQ" class="constant">
+    <span class="name "><a href="../cmd_tspl/Tspl/qrcodeErrorLevelQ-constant.html">qrcodeErrorLevelQ</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  
+
+</dt>
+<dd>
+  
+  
+
+  <div>
+    <span class="signature"><code>&quot;Q&quot;</code></span>
+  </div>
+</dd>
+
+    </dl>
+  </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">printersdk</a></li>
+  <li><a href="../cmd_tspl/cmd_tspl-library.html">tspl</a></li>
+  <li class="self-crumb">Tspl class</li>
+</ol>
+
+
+    <h5>tspl library</h5>
+    <ol>
+  <li class="section-title"><a href="../cmd_tspl/cmd_tspl-library.html#classes">Classes</a></li>
+  <li><a href="../cmd_tspl/Tspl-class.html">Tspl</a></li>
+
+
+
+
+
+
+  <li class="section-title"><a href="../cmd_tspl/cmd_tspl-library.html#enums">Enums</a></li>
+  <li><a href="../cmd_tspl/BlendMode.html">BlendMode</a></li>
+  <li><a href="../cmd_tspl/ResponsMode.html">ResponsMode</a></li>
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+        <li class="section-title"><a href="../cmd_tspl/Tspl-class.html#constructors">Constructors</a></li>
+          <li><a href="../cmd_tspl/Tspl/Tspl.html">Tspl</a></li>
+
+
+    <li class="section-title inherited">
+      <a href="../cmd_tspl/Tspl-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+    <li class="section-title"><a href="../cmd_tspl/Tspl-class.html#instance-methods">Methods</a></li>
+    <li><a href="../cmd_tspl/Tspl/addBarcode.html">addBarcode</a></li>
+    <li><a href="../cmd_tspl/Tspl/addBitmap.html">addBitmap</a></li>
+    <li><a href="../cmd_tspl/Tspl/addBmpFile.html">addBmpFile</a></li>
+    <li><a href="../cmd_tspl/Tspl/addBox.html">addBox</a></li>
+    <li class="inherited"><a href="../cmd_print_cmd/PrintCmd/addByte.html">addByte</a></li>
+    <li class="inherited"><a href="../cmd_print_cmd/PrintCmd/addBytes.html">addBytes</a></li>
+    <li><a href="../cmd_tspl/Tspl/addLine.html">addLine</a></li>
+    <li><a href="../cmd_tspl/Tspl/addPcxFile.html">addPcxFile</a></li>
+    <li><a href="../cmd_tspl/Tspl/addQrcode.html">addQrcode</a></li>
+    <li><a href="../cmd_tspl/Tspl/addQueryPrinterCodePage.html">addQueryPrinterCodePage</a></li>
+    <li><a href="../cmd_tspl/Tspl/addQueryPrinterFile.html">addQueryPrinterFile</a></li>
+    <li><a href="../cmd_tspl/Tspl/addQueryPrinterMemory.html">addQueryPrinterMemory</a></li>
+    <li><a href="../cmd_tspl/Tspl/addQueryPrinterModel.html">addQueryPrinterModel</a></li>
+    <li><a href="../cmd_tspl/Tspl/addQueryPrinterStatus.html">addQueryPrinterStatus</a></li>
+    <li><a href="../cmd_tspl/Tspl/addQueryPrinterTotalFeed.html">addQueryPrinterTotalFeed</a></li>
+    <li><a href="../cmd_tspl/Tspl/addSelfTest.html">addSelfTest</a></li>
+    <li class="inherited"><a href="../cmd_print_cmd/PrintCmd/addString.html">addString</a></li>
+    <li><a href="../cmd_tspl/Tspl/addText.html">addText</a></li>
+    <li><a href="../cmd_tspl/Tspl/addTextByBitmap.html">addTextByBitmap</a></li>
+    <li><a href="../cmd_tspl/Tspl/beep.html">beep</a></li>
+    <li class="inherited"><a href="../cmd_print_cmd/PrintCmd/clear.html">clear</a></li>
+    <li><a href="../cmd_tspl/Tspl/clearPrinterBuffer.html">clearPrinterBuffer</a></li>
+    <li><a href="../cmd_tspl/Tspl/clearPrinterBufferArea.html">clearPrinterBufferArea</a></li>
+    <li><a href="../cmd_tspl/Tspl/deleteFile.html">deleteFile</a></li>
+    <li><a href="../cmd_tspl/Tspl/downloadBmpFile.html">downloadBmpFile</a></li>
+    <li><a href="../cmd_tspl/Tspl/downloadDataFile.html">downloadDataFile</a></li>
+    <li><a href="../cmd_tspl/Tspl/downloadProgramFile.html">downloadProgramFile</a></li>
+    <li><a href="../cmd_tspl/Tspl/feedPaper.html">feedPaper</a></li>
+    <li><a href="../cmd_tspl/Tspl/feedPaperBackward.html">feedPaperBackward</a></li>
+    <li><a href="../cmd_tspl/Tspl/feedPaperOneLabel.html">feedPaperOneLabel</a></li>
+    <li><a href="../cmd_tspl/Tspl/feedPaperToNextLabel.html">feedPaperToNextLabel</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../cmd_tspl/Tspl/print.html">print</a></li>
+    <li><a href="../cmd_tspl/Tspl/print2.html">print2</a></li>
+    <li class="inherited"><a href="../cmd_print_cmd/PrintCmd/rangeLimit.html">rangeLimit</a></li>
+    <li><a href="../cmd_tspl/Tspl/reversePrinterBufferArea.html">reversePrinterBufferArea</a></li>
+    <li><a href="../cmd_tspl/Tspl/runProgramFile.html">runProgramFile</a></li>
+    <li><a href="../cmd_tspl/Tspl/setAxisOrigin.html">setAxisOrigin</a></li>
+    <li class="inherited"><a href="../cmd_print_cmd/PrintCmd/setBlackColorDensity.html">setBlackColorDensity</a></li>
+    <li><a href="../cmd_tspl/Tspl/setBlineGap.html">setBlineGap</a></li>
+    <li><a href="../cmd_tspl/Tspl/setCodePage.html">setCodePage</a></li>
+    <li><a href="../cmd_tspl/Tspl/setCutter.html">setCutter</a></li>
+    <li><a href="../cmd_tspl/Tspl/setCutterAtPrintCount.html">setCutterAtPrintCount</a></li>
+    <li><a href="../cmd_tspl/Tspl/setCutterBatch.html">setCutterBatch</a></li>
+    <li><a href="../cmd_tspl/Tspl/setCutterPartial.html">setCutterPartial</a></li>
+    <li><a href="../cmd_tspl/Tspl/setGap.html">setGap</a></li>
+    <li><a href="../cmd_tspl/Tspl/setMaxFeedPaperOnFindLabelStart.html">setMaxFeedPaperOnFindLabelStart</a></li>
+    <li><a href="../cmd_tspl/Tspl/setPaperOffsetAfterPrint.html">setPaperOffsetAfterPrint</a></li>
+    <li class="inherited"><a href="../cmd_print_cmd/PrintCmd/setPrintColor.html">setPrintColor</a></li>
+    <li><a href="../cmd_tspl/Tspl/setPrintDensity.html">setPrintDensity</a></li>
+    <li><a href="../cmd_tspl/Tspl/setPrintDirection.html">setPrintDirection</a></li>
+    <li class="inherited"><a href="../cmd_print_cmd/PrintCmd/setPrinterDoubleColorMode.html">setPrinterDoubleColorMode</a></li>
+    <li><a href="../cmd_tspl/Tspl/setPrinterPeel.html">setPrinterPeel</a></li>
+    <li><a href="../cmd_tspl/Tspl/setPrintKey.html">setPrintKey</a></li>
+    <li><a href="../cmd_tspl/Tspl/setPrintKeyPrintCount.html">setPrintKeyPrintCount</a></li>
+    <li><a href="../cmd_tspl/Tspl/setPrintSpeed.html">setPrintSpeed</a></li>
+    <li class="inherited"><a href="../cmd_print_cmd/PrintCmd/setRedColorDensity.html">setRedColorDensity</a></li>
+    <li><a href="../cmd_tspl/Tspl/setReprintOnError.html">setReprintOnError</a></li>
+    <li><a href="../cmd_tspl/Tspl/setResponseAfterPrint.html">setResponseAfterPrint</a></li>
+    <li><a href="../cmd_tspl/Tspl/setTear.html">setTear</a></li>
+    <li class="inherited"><a href="../cmd_print_cmd/PrintCmd/toBytes.html">toBytes</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../cmd_tspl/Tspl-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+        <li class="section-title"><a href="../cmd_tspl/Tspl-class.html#constants">Constants</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcode25-constant.html">barcode25</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcode25C-constant.html">barcode25C</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeChinaPostCode-constant.html">barcodeChinaPostCode</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeCodabar-constant.html">barcodeCodabar</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeCode39-constant.html">barcodeCode39</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeCode39C-constant.html">barcodeCode39C</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeCode39S-constant.html">barcodeCode39S</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeCode93-constant.html">barcodeCode93</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeCode128-constant.html">barcodeCode128</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeCode128M-constant.html">barcodeCode128M</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeCodeEAN128-constant.html">barcodeCodeEAN128</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeEAN8-constant.html">barcodeEAN8</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeEAN8Plus2-constant.html">barcodeEAN8Plus2</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeEAN8Plus5-constant.html">barcodeEAN8Plus5</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeEAN13-constant.html">barcodeEAN13</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeEAN13Plus2-constant.html">barcodeEAN13Plus2</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeEAN13Plus5-constant.html">barcodeEAN13Plus5</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeEAN14-constant.html">barcodeEAN14</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeITF14-constant.html">barcodeITF14</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeMsi-constant.html">barcodeMsi</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeMsiC-constant.html">barcodeMsiC</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodePlessey-constant.html">barcodePlessey</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeUPCA-constant.html">barcodeUPCA</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeUPCAPlus2-constant.html">barcodeUPCAPlus2</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeUPCAPlus5-constant.html">barcodeUPCAPlus5</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeUPCE-constant.html">barcodeUPCE</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeUPCEPlus2-constant.html">barcodeUPCEPlus2</a></li>
+          <li><a href="../cmd_tspl/Tspl/barcodeUPCEPlus5-constant.html">barcodeUPCEPlus5</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageArabic-constant.html">codePageArabic</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageCanadianOrFrench-constant.html">codePageCanadianOrFrench</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageCentralEurope-constant.html">codePageCentralEurope</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageCyrillic-constant.html">codePageCyrillic</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageEastEurope-constant.html">codePageEastEurope</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageGreek-constant.html">codePageGreek</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageGreek2-constant.html">codePageGreek2</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageHebrew-constant.html">codePageHebrew</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageIran-constant.html">codePageIran</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageIran2-constant.html">codePageIran2</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageLatin1-constant.html">codePageLatin1</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageLatvian-constant.html">codePageLatvian</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageMultilinggual-constant.html">codePageMultilinggual</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageNordic-constant.html">codePageNordic</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePagePC747-constant.html">codePagePC747</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePagePC858-constant.html">codePagePC858</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePagePC864-constant.html">codePagePC864</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePagePC1001-constant.html">codePagePC1001</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePagePortuguese-constant.html">codePagePortuguese</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageSlavic-constant.html">codePageSlavic</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageThai-constant.html">codePageThai</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageTurkish-constant.html">codePageTurkish</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageUs-constant.html">codePageUs</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageUygur-constant.html">codePageUygur</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageVietnam-constant.html">codePageVietnam</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageWestEurope-constant.html">codePageWestEurope</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageWPC1251-constant.html">codePageWPC1251</a></li>
+          <li><a href="../cmd_tspl/Tspl/codePageWPC1257-constant.html">codePageWPC1257</a></li>
+          <li><a href="../cmd_tspl/Tspl/qrcodeErrorLevelH-constant.html">qrcodeErrorLevelH</a></li>
+          <li><a href="../cmd_tspl/Tspl/qrcodeErrorLevelL-constant.html">qrcodeErrorLevelL</a></li>
+          <li><a href="../cmd_tspl/Tspl/qrcodeErrorLevelM-constant.html">qrcodeErrorLevelM</a></li>
+          <li><a href="../cmd_tspl/Tspl/qrcodeErrorLevelQ-constant.html">qrcodeErrorLevelQ</a></li>
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    printersdk
+      0.0.1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

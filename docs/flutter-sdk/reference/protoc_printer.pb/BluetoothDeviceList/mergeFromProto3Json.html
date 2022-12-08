@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the mergeFromProto3Json method from the BluetoothDeviceList class, for the Dart programming language.">
+  <title>mergeFromProto3Json method - BluetoothDeviceList class - printer.pb library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">printersdk</a></li>
+    <li><a href="../../protoc_printer.pb/protoc_printer.pb-library.html">printer.pb</a></li>
+    <li><a href="../../protoc_printer.pb/BluetoothDeviceList-class.html">BluetoothDeviceList</a></li>
+    <li class="self-crumb">mergeFromProto3Json method</li>
+  </ol>
+  <div class="self-name">mergeFromProto3Json</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">mergeFromProto3Json</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype">void</span>
+<span class="name ">mergeFromProto3Json</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="mergeFromProto3Json-param-json"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a>?</span> <span class="parameter-name">json</span>, </span></li>
+<li><span class="parameter" id="mergeFromProto3Json-param-typeRegistry">{<span class="type-annotation">TypeRegistry</span> <span class="parameter-name">typeRegistry</span> = <span class="default-value">const TypeRegistry.empty()</span>, </span></li>
+<li><span class="parameter" id="mergeFromProto3Json-param-ignoreUnknownFields"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">ignoreUnknownFields</span> = <span class="default-value">false</span>, </span></li>
+<li><span class="parameter" id="mergeFromProto3Json-param-supportNamesWithUnderscores"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">supportNamesWithUnderscores</span> = <span class="default-value">true</span>, </span></li>
+<li><span class="parameter" id="mergeFromProto3Json-param-permissiveEnums"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">permissiveEnums</span> = <span class="default-value">false</span>}</span></li>
+</ol>)
+
+      <div class="features">inherited</div>
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Merges field values from <code>json</code>, a JSON object using proto3 encoding.</p>
+<p>Well-known types and their special JSON encodings are supported.</p>
+<p>Throws <a href="https://api.flutter.dev/flutter/dart-core/FormatException-class.html">FormatException</a> if <code>ignoreUnknownFields</code> is <code>false</code> (the
+default) and an unknown field or enum name is encountered. Otherwise the
+unknown field or enum is ignored.</p>
+<p>If <code>supportNamesWithUnderscores</code> is <code>true</code> (the default) field names in
+the JSON can be represented as either camel-case JSON-names or names with
+underscores. Otherwise only the JSON names are supported.</p>
+<p>If <code>permissiveEnums</code> is <code>true</code> (default <code>false</code>) enum values in the JSON
+will be matched without case insensitivity and ignoring <code>-</code>s and <code>_</code>s.
+This allows JSON values like <code>camelCase</code> and <code>kebab-case</code> to match the
+enum values <code>CAMEL_CASE</code> and <code>KEBAB_CASE</code>.</p>
+<p>In case of ambiguities between the enum values, the first matching value
+will be used.</p>
+<p>The <code>typeRegistry</code> is used for decoding <code>Any</code> messages.</p>
+<p>Throws <a href="https://api.flutter.dev/flutter/dart-core/FormatException-class.html">FormatException</a> if an <code>Any</code> message type is not in
+<code>typeRegistry</code>.</p>
+<p>Throws <a href="https://api.flutter.dev/flutter/dart-core/FormatException-class.html">FormatException</a> if the JSON not formatted correctly (a String
+where a number was expected etc.).</p>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">void mergeFromProto3Json(Object? json,
+        {TypeRegistry typeRegistry = const TypeRegistry.empty(),
+        bool ignoreUnknownFields = false,
+        bool supportNamesWithUnderscores = true,
+        bool permissiveEnums = false}) =&gt;
+    _mergeFromProto3Json(json, _fieldSet, typeRegistry, ignoreUnknownFields,
+        supportNamesWithUnderscores, permissiveEnums);</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">printersdk</a></li>
+  <li><a href="../../protoc_printer.pb/protoc_printer.pb-library.html">printer.pb</a></li>
+  <li><a href="../../protoc_printer.pb/BluetoothDeviceList-class.html">BluetoothDeviceList</a></li>
+  <li class="self-crumb">mergeFromProto3Json method</li>
+</ol>
+
+
+    <h5>BluetoothDeviceList class</h5>
+    <ol>
+
+        <li class="section-title"><a href="../../protoc_printer.pb/BluetoothDeviceList-class.html#constructors">Constructors</a></li>
+          <li><a href="../../protoc_printer.pb/BluetoothDeviceList/BluetoothDeviceList.html">BluetoothDeviceList</a></li>
+          <li><a href="../../protoc_printer.pb/BluetoothDeviceList/BluetoothDeviceList.fromBuffer.html">fromBuffer</a></li>
+          <li><a href="../../protoc_printer.pb/BluetoothDeviceList/BluetoothDeviceList.fromJson.html">fromJson</a></li>
+
+
+    <li class="section-title">
+      <a href="../../protoc_printer.pb/BluetoothDeviceList-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/eventPlugin.html">eventPlugin</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/hashCode.html">hashCode</a></li>
+    <li><a href="../../protoc_printer.pb/BluetoothDeviceList/info_.html">info_</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/isFrozen.html">isFrozen</a></li>
+    <li><a href="../../protoc_printer.pb/BluetoothDeviceList/items.html">items</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/unknownFields.html">unknownFields</a></li>
+
+    <li class="section-title"><a href="../../protoc_printer.pb/BluetoothDeviceList-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_ensure.html">$_ensure</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_get.html">$_get</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_getB.html">$_getB</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_getBF.html">$_getBF</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_getI.html">$_getI</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_getI64.html">$_getI64</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_getIZ.html">$_getIZ</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_getList.html">$_getList</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_getMap.html">$_getMap</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_getN.html">$_getN</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_getS.html">$_getS</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_getSZ.html">$_getSZ</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_has.html">$_has</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_setBool.html">$_setBool</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_setBytes.html">$_setBytes</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_setDouble.html">$_setDouble</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_setFloat.html">$_setFloat</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_setInt64.html">$_setInt64</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_setSignedInt32.html">$_setSignedInt32</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_setString.html">$_setString</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_setUnsignedInt32.html">$_setUnsignedInt32</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/$_whichOneof.html">$_whichOneof</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/addExtension.html">addExtension</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/check.html">check</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/clear.html">clear</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/clearExtension.html">clearExtension</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/clearField.html">clearField</a></li>
+    <li><a class="deprecated" href="../../protoc_printer.pb/BluetoothDeviceList/clone.html">clone</a></li>
+    <li><a class="deprecated" href="../../protoc_printer.pb/BluetoothDeviceList/copyWith.html">copyWith</a></li>
+    <li><a href="../../protoc_printer.pb/BluetoothDeviceList/createEmptyInstance.html">createEmptyInstance</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/createMapField.html">createMapField</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/createRepeatedField.html">createRepeatedField</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/extensionsAreInitialized.html">extensionsAreInitialized</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/freeze.html">freeze</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/getDefaultForField.html">getDefaultForField</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/getExtension.html">getExtension</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/getField.html">getField</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/getFieldOrNull.html">getFieldOrNull</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/getTagNumber.html">getTagNumber</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/hasExtension.html">hasExtension</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/hasField.html">hasField</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/hasRequiredFields.html">hasRequiredFields</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/isInitialized.html">isInitialized</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/mergeFromBuffer.html">mergeFromBuffer</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/mergeFromCodedBufferReader.html">mergeFromCodedBufferReader</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/mergeFromJson.html">mergeFromJson</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/mergeFromJsonMap.html">mergeFromJsonMap</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/mergeFromMessage.html">mergeFromMessage</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/mergeFromProto3Json.html">mergeFromProto3Json</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/mergeUnknownFields.html">mergeUnknownFields</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/setExtension.html">setExtension</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/setField.html">setField</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/toBuilder.html">toBuilder</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/toDebugString.html">toDebugString</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/toProto3Json.html">toProto3Json</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/toString.html">toString</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/writeToBuffer.html">writeToBuffer</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/writeToCodedBufferWriter.html">writeToCodedBufferWriter</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/writeToJson.html">writeToJson</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/writeToJsonMap.html">writeToJsonMap</a></li>
+
+    <li class="section-title inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/BluetoothDeviceList/operator_equals.html">operator ==</a></li>
+
+
+
+        <li class="section-title"><a href="../../protoc_printer.pb/BluetoothDeviceList-class.html#static-methods">Static methods</a></li>
+          <li><a href="../../protoc_printer.pb/BluetoothDeviceList/create.html">create</a></li>
+          <li><a href="../../protoc_printer.pb/BluetoothDeviceList/createRepeated.html">createRepeated</a></li>
+          <li><a href="../../protoc_printer.pb/BluetoothDeviceList/getDefault.html">getDefault</a></li>
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    printersdk
+      0.0.1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

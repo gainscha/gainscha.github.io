@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the toProto3Json method from the PrinterDeviceType class, for the Dart programming language.">
+  <title>toProto3Json method - PrinterDeviceType class - printer.pb library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">printersdk</a></li>
+    <li><a href="../../protoc_printer.pb/protoc_printer.pb-library.html">printer.pb</a></li>
+    <li><a href="../../protoc_printer.pb/PrinterDeviceType-class.html">PrinterDeviceType</a></li>
+    <li class="self-crumb">toProto3Json method</li>
+  </ol>
+  <div class="self-name">toProto3Json</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">toProto3Json</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a>?</span>
+<span class="name ">toProto3Json</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="toProto3Json-param-typeRegistry">{<span class="type-annotation">TypeRegistry</span> <span class="parameter-name">typeRegistry</span> = <span class="default-value">const TypeRegistry.empty()</span>}</span></li>
+</ol>)
+
+      <div class="features">inherited</div>
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Returns an Object representing Proto3 JSON serialization of <code>this</code>.</p>
+<p>The key for each field is be the camel-cased name of the field.</p>
+<p>Well-known types and their special JSON encoding are supported.
+If a well-known type cannot be encoded (eg. a <code>google.protobuf.Timestamp</code>
+with negative <code>nanoseconds</code>) an error is thrown.</p>
+<p>Extensions and unknown fields are not encoded.</p>
+<p>The <code>typeRegistry</code> is be used for encoding <code>Any</code> messages. If an <code>Any</code>
+message encoding a type not in <code>typeRegistry</code> is encountered, an
+error is thrown.</p>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">Object? toProto3Json(
+        {TypeRegistry typeRegistry = const TypeRegistry.empty()}) =&gt;
+    _writeToProto3Json(_fieldSet, typeRegistry);</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">printersdk</a></li>
+  <li><a href="../../protoc_printer.pb/protoc_printer.pb-library.html">printer.pb</a></li>
+  <li><a href="../../protoc_printer.pb/PrinterDeviceType-class.html">PrinterDeviceType</a></li>
+  <li class="self-crumb">toProto3Json method</li>
+</ol>
+
+
+    <h5>PrinterDeviceType class</h5>
+    <ol>
+
+        <li class="section-title"><a href="../../protoc_printer.pb/PrinterDeviceType-class.html#constructors">Constructors</a></li>
+          <li><a href="../../protoc_printer.pb/PrinterDeviceType/PrinterDeviceType.html">PrinterDeviceType</a></li>
+          <li><a href="../../protoc_printer.pb/PrinterDeviceType/PrinterDeviceType.fromBuffer.html">fromBuffer</a></li>
+          <li><a href="../../protoc_printer.pb/PrinterDeviceType/PrinterDeviceType.fromJson.html">fromJson</a></li>
+
+
+    <li class="section-title">
+      <a href="../../protoc_printer.pb/PrinterDeviceType-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/eventPlugin.html">eventPlugin</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/hashCode.html">hashCode</a></li>
+    <li><a href="../../protoc_printer.pb/PrinterDeviceType/info_.html">info_</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/isFrozen.html">isFrozen</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li><a href="../../protoc_printer.pb/PrinterDeviceType/type.html">type</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/unknownFields.html">unknownFields</a></li>
+
+    <li class="section-title"><a href="../../protoc_printer.pb/PrinterDeviceType-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_ensure.html">$_ensure</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_get.html">$_get</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_getB.html">$_getB</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_getBF.html">$_getBF</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_getI.html">$_getI</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_getI64.html">$_getI64</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_getIZ.html">$_getIZ</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_getList.html">$_getList</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_getMap.html">$_getMap</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_getN.html">$_getN</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_getS.html">$_getS</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_getSZ.html">$_getSZ</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_has.html">$_has</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_setBool.html">$_setBool</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_setBytes.html">$_setBytes</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_setDouble.html">$_setDouble</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_setFloat.html">$_setFloat</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_setInt64.html">$_setInt64</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_setSignedInt32.html">$_setSignedInt32</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_setString.html">$_setString</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_setUnsignedInt32.html">$_setUnsignedInt32</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/$_whichOneof.html">$_whichOneof</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/addExtension.html">addExtension</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/check.html">check</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/clear.html">clear</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/clearExtension.html">clearExtension</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/clearField.html">clearField</a></li>
+    <li><a href="../../protoc_printer.pb/PrinterDeviceType/clearType.html">clearType</a></li>
+    <li><a class="deprecated" href="../../protoc_printer.pb/PrinterDeviceType/clone.html">clone</a></li>
+    <li><a class="deprecated" href="../../protoc_printer.pb/PrinterDeviceType/copyWith.html">copyWith</a></li>
+    <li><a href="../../protoc_printer.pb/PrinterDeviceType/createEmptyInstance.html">createEmptyInstance</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/createMapField.html">createMapField</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/createRepeatedField.html">createRepeatedField</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/extensionsAreInitialized.html">extensionsAreInitialized</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/freeze.html">freeze</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/getDefaultForField.html">getDefaultForField</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/getExtension.html">getExtension</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/getField.html">getField</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/getFieldOrNull.html">getFieldOrNull</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/getTagNumber.html">getTagNumber</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/hasExtension.html">hasExtension</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/hasField.html">hasField</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/hasRequiredFields.html">hasRequiredFields</a></li>
+    <li><a href="../../protoc_printer.pb/PrinterDeviceType/hasType.html">hasType</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/isInitialized.html">isInitialized</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/mergeFromBuffer.html">mergeFromBuffer</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/mergeFromCodedBufferReader.html">mergeFromCodedBufferReader</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/mergeFromJson.html">mergeFromJson</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/mergeFromJsonMap.html">mergeFromJsonMap</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/mergeFromMessage.html">mergeFromMessage</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/mergeFromProto3Json.html">mergeFromProto3Json</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/mergeUnknownFields.html">mergeUnknownFields</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/setExtension.html">setExtension</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/setField.html">setField</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/toBuilder.html">toBuilder</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/toDebugString.html">toDebugString</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/toProto3Json.html">toProto3Json</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/toString.html">toString</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/writeToBuffer.html">writeToBuffer</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/writeToCodedBufferWriter.html">writeToCodedBufferWriter</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/writeToJson.html">writeToJson</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/writeToJsonMap.html">writeToJsonMap</a></li>
+
+    <li class="section-title inherited"><a href="../../protoc_printer.pb/PrinterDeviceType-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="../../protoc_printer.pb/PrinterDeviceType/operator_equals.html">operator ==</a></li>
+
+
+
+        <li class="section-title"><a href="../../protoc_printer.pb/PrinterDeviceType-class.html#static-methods">Static methods</a></li>
+          <li><a href="../../protoc_printer.pb/PrinterDeviceType/create.html">create</a></li>
+          <li><a href="../../protoc_printer.pb/PrinterDeviceType/createRepeated.html">createRepeated</a></li>
+          <li><a href="../../protoc_printer.pb/PrinterDeviceType/getDefault.html">getDefault</a></li>
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    printersdk
+      0.0.1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

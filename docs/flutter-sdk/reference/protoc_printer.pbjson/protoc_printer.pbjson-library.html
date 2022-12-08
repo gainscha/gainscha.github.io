@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="printer.pbjson library API docs, for the Dart programming language.">
+  <title>printer.pbjson library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">printersdk</a></li>
+    <li class="self-crumb">printer.pbjson library</li>
+  </ol>
+  <div class="self-name">printer.pbjson</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-library">printer.pbjson</span> library 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+
+
+
+
+
+    <section class="summary offset-anchor" id="constants">
+      <h2>Constants</h2>
+
+      <dl class="properties">
+        <dt id="BluetoothDevice$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/BluetoothDevice$json-constant.html">BluetoothDevice$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use bluetoothDeviceDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;BluetoothDevice&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;type&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 11, &#39;6&#39; : &#39;.PrinterDeviceType&#39;…</code></span>
+  </div>
+</dd>
+
+        <dt id="BluetoothDeviceList$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/BluetoothDeviceList$json-constant.html">BluetoothDeviceList$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use bluetoothDeviceListDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;BluetoothDeviceList&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;items&#39;, &#39;3&#39; : 1, &#39;4&#39; : 3, &#39;5&#39; : 11, &#39;6&#39; : &#39;.BluetoothDevice&#…</code></span>
+  </div>
+</dd>
+
+        <dt id="BluetoothDeviceType$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/BluetoothDeviceType$json-constant.html">BluetoothDeviceType$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use bluetoothDeviceTypeDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;BluetoothDeviceType&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;type&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 14, &#39;6&#39; : &#39;.BluetoothDeviceTyp…</code></span>
+  </div>
+</dd>
+
+        <dt id="BluetoothDeviceType_Type$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/BluetoothDeviceType_Type$json-constant.html">BluetoothDeviceType_Type$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use bluetoothDeviceTypeDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;Type&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;UNKNOWN&#39;, &#39;2&#39; : 0}, const {&#39;1&#39; : &#39;CLASSIC&#39;, &#39;2&#39; : 1}, const {&#39;1&#39; : &#39;…</code></span>
+  </div>
+</dd>
+
+        <dt id="BluetoothReadWriteData$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/BluetoothReadWriteData$json-constant.html">BluetoothReadWriteData$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use bluetoothReadWriteDataDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;BluetoothReadWriteData&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;device&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 11, &#39;6&#39; : &#39;.BluetoothDevi…</code></span>
+  </div>
+</dd>
+
+        <dt id="BluetoothScanMode$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/BluetoothScanMode$json-constant.html">BluetoothScanMode$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use bluetoothScanModeDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;BluetoothScanMode&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;mode&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 14, &#39;6&#39; : &#39;.BluetoothScanMode.Mo…</code></span>
+  </div>
+</dd>
+
+        <dt id="BluetoothScanMode_Mode$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/BluetoothScanMode_Mode$json-constant.html">BluetoothScanMode_Mode$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use bluetoothScanModeDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;Mode&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;LOW_POWER&#39;, &#39;2&#39; : 0}, const {&#39;1&#39; : &#39;BALANCED&#39;, &#39;2&#39; : 1}, const {&#39;1&#39; : &#…</code></span>
+  </div>
+</dd>
+
+        <dt id="BluetoothState$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/BluetoothState$json-constant.html">BluetoothState$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use bluetoothStateDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;BluetoothState&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;state&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 14, &#39;6&#39; : &#39;.BluetoothState.State&#…</code></span>
+  </div>
+</dd>
+
+        <dt id="BluetoothState_State$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/BluetoothState_State$json-constant.html">BluetoothState_State$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use bluetoothStateDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;State&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;UNKNOWN&#39;, &#39;2&#39; : 0}, const {&#39;1&#39; : &#39;UNAVAILABLE&#39;, &#39;2&#39; : 1}, const {&#39;1&#39; : …</code></span>
+  </div>
+</dd>
+
+        <dt id="LocateString$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/LocateString$json-constant.html">LocateString$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use locateStringDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;LocateString&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;kv&#39;, &#39;3&#39; : 1, &#39;4&#39; : 3, &#39;5&#39; : 11, &#39;6&#39; : &#39;.LocateString.KvEntry&#39;, …</code></span>
+  </div>
+</dd>
+
+        <dt id="LocateString_KvEntry$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/LocateString_KvEntry$json-constant.html">LocateString_KvEntry$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use locateStringDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;KvEntry&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;key&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 9, &#39;10&#39; : &#39;key&#39;}, const {&#39;1&#39; : …</code></span>
+  </div>
+</dd>
+
+        <dt id="PrinterDeviceType$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/PrinterDeviceType$json-constant.html">PrinterDeviceType$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use printerDeviceTypeDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;PrinterDeviceType&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;type&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 14, &#39;6&#39; : &#39;.PrinterDeviceType.Ty…</code></span>
+  </div>
+</dd>
+
+        <dt id="PrinterDeviceType_Type$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/PrinterDeviceType_Type$json-constant.html">PrinterDeviceType_Type$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use printerDeviceTypeDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;Type&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;BLUETOOTH&#39;, &#39;2&#39; : 0}, const {&#39;1&#39; : &#39;USB&#39;, &#39;2&#39; : 1}, const {&#39;1&#39; : &#39;US…</code></span>
+  </div>
+</dd>
+
+        <dt id="TcpDevice$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/TcpDevice$json-constant.html">TcpDevice$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use tcpDeviceDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;TcpDevice&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;type&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 11, &#39;6&#39; : &#39;.PrinterDeviceType&#39;, &#39…</code></span>
+  </div>
+</dd>
+
+        <dt id="TcpDeviceList$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/TcpDeviceList$json-constant.html">TcpDeviceList$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use tcpDeviceListDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;TcpDeviceList&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;items&#39;, &#39;3&#39; : 1, &#39;4&#39; : 3, &#39;5&#39; : 11, &#39;6&#39; : &#39;.TcpDevice&#39;, &#39;10…</code></span>
+  </div>
+</dd>
+
+        <dt id="TcpReadWriteData$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/TcpReadWriteData$json-constant.html">TcpReadWriteData$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use tcpReadWriteDataDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;TcpReadWriteData&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;device&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 11, &#39;6&#39; : &#39;.TcpDevice&#39;, &#3…</code></span>
+  </div>
+</dd>
+
+        <dt id="TtyDevice$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/TtyDevice$json-constant.html">TtyDevice$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use ttyDeviceDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;TtyDevice&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;type&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 11, &#39;6&#39; : &#39;.PrinterDeviceType&#39;, &#39…</code></span>
+  </div>
+</dd>
+
+        <dt id="TtyDeviceList$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/TtyDeviceList$json-constant.html">TtyDeviceList$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use ttyDeviceListDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;TtyDeviceList&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;items&#39;, &#39;3&#39; : 1, &#39;4&#39; : 3, &#39;5&#39; : 11, &#39;6&#39; : &#39;.TtyDevice&#39;, &#39;10…</code></span>
+  </div>
+</dd>
+
+        <dt id="TtyReadWriteData$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/TtyReadWriteData$json-constant.html">TtyReadWriteData$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use ttyReadWriteDataDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;TtyReadWriteData&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;device&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 11, &#39;6&#39; : &#39;.TtyDevice&#39;, &#3…</code></span>
+  </div>
+</dd>
+
+        <dt id="UsbAccessoryDevice$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/UsbAccessoryDevice$json-constant.html">UsbAccessoryDevice$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use usbAccessoryDeviceDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;UsbAccessoryDevice&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;type&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 11, &#39;6&#39; : &#39;.PrinterDeviceType&#…</code></span>
+  </div>
+</dd>
+
+        <dt id="UsbAccessoryList$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/UsbAccessoryList$json-constant.html">UsbAccessoryList$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use usbAccessoryListDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;UsbAccessoryList&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;items&#39;, &#39;3&#39; : 1, &#39;4&#39; : 3, &#39;5&#39; : 11, &#39;6&#39; : &#39;.UsbAccessoryDevice&#…</code></span>
+  </div>
+</dd>
+
+        <dt id="UsbAccessoryReadWriteData$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/UsbAccessoryReadWriteData$json-constant.html">UsbAccessoryReadWriteData$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use usbAccessoryReadWriteDataDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;UsbAccessoryReadWriteData&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;device&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 11, &#39;6&#39; : &#39;.UsbAccesso…</code></span>
+  </div>
+</dd>
+
+        <dt id="UsbDevice$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/UsbDevice$json-constant.html">UsbDevice$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use usbDeviceDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;UsbDevice&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;type&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 11, &#39;6&#39; : &#39;.PrinterDeviceType&#39;, &#39…</code></span>
+  </div>
+</dd>
+
+        <dt id="UsbDeviceList$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/UsbDeviceList$json-constant.html">UsbDeviceList$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use usbDeviceListDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;UsbDeviceList&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;items&#39;, &#39;3&#39; : 1, &#39;4&#39; : 3, &#39;5&#39; : 11, &#39;6&#39; : &#39;.UsbDevice&#39;, &#39;10…</code></span>
+  </div>
+</dd>
+
+        <dt id="UsbReadWriteData$json" class="constant">
+    <span class="name deprecated"><a class="deprecated" href="../protoc_printer.pbjson/UsbReadWriteData$json-constant.html">UsbReadWriteData$json</a></span>
+  <span class="signature">&#8594; const <a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Use usbReadWriteDataDescriptor instead&#39;)</div>
+
+  <div>
+    <span class="signature"><code>const {&#39;1&#39; : &#39;UsbReadWriteData&#39;, &#39;2&#39; : const [const {&#39;1&#39; : &#39;device&#39;, &#39;3&#39; : 1, &#39;4&#39; : 1, &#39;5&#39; : 11, &#39;6&#39; : &#39;.UsbDevice&#39;, &#3…</code></span>
+  </div>
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="bluetoothDeviceDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/bluetoothDeviceDescriptor.html">bluetoothDeviceDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>BluetoothDevice</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="bluetoothDeviceListDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/bluetoothDeviceListDescriptor.html">bluetoothDeviceListDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>BluetoothDeviceList</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="bluetoothDeviceTypeDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/bluetoothDeviceTypeDescriptor.html">bluetoothDeviceTypeDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>BluetoothDeviceType</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="bluetoothReadWriteDataDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/bluetoothReadWriteDataDescriptor.html">bluetoothReadWriteDataDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>BluetoothReadWriteData</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="bluetoothScanModeDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/bluetoothScanModeDescriptor.html">bluetoothScanModeDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>BluetoothScanMode</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="bluetoothStateDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/bluetoothStateDescriptor.html">bluetoothStateDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>BluetoothState</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="locateStringDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/locateStringDescriptor.html">locateStringDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>LocateString</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="printerDeviceTypeDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/printerDeviceTypeDescriptor.html">printerDeviceTypeDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>PrinterDeviceType</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="tcpDeviceDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/tcpDeviceDescriptor.html">tcpDeviceDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>TcpDevice</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="tcpDeviceListDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/tcpDeviceListDescriptor.html">tcpDeviceListDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>TcpDeviceList</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="tcpReadWriteDataDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/tcpReadWriteDataDescriptor.html">tcpReadWriteDataDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>TcpReadWriteData</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="ttyDeviceDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/ttyDeviceDescriptor.html">ttyDeviceDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>TtyDevice</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="ttyDeviceListDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/ttyDeviceListDescriptor.html">ttyDeviceListDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>TtyDeviceList</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="ttyReadWriteDataDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/ttyReadWriteDataDescriptor.html">ttyReadWriteDataDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>TtyReadWriteData</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="usbAccessoryDeviceDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/usbAccessoryDeviceDescriptor.html">usbAccessoryDeviceDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>UsbAccessoryDevice</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="usbAccessoryListDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/usbAccessoryListDescriptor.html">usbAccessoryListDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>UsbAccessoryList</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="usbAccessoryReadWriteDataDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/usbAccessoryReadWriteDataDescriptor.html">usbAccessoryReadWriteDataDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>UsbAccessoryReadWriteData</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="usbDeviceDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/usbDeviceDescriptor.html">usbDeviceDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>UsbDevice</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="usbDeviceListDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/usbDeviceListDescriptor.html">usbDeviceListDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>UsbDeviceList</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="usbReadWriteDataDescriptor" class="property">
+  <span class="name"><a href="../protoc_printer.pbjson/usbReadWriteDataDescriptor.html">usbReadWriteDataDescriptor</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span> 
+
+</dt>
+<dd>
+  Descriptor for <code>UsbReadWriteData</code>. Decode as a <code>google.protobuf.DescriptorProto</code>.
+  <div class="features">final</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">printersdk</a></li>
+  <li class="self-crumb">printer.pbjson library</li>
+</ol>
+
+
+    <h5><span class="package-name">printersdk</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="../model_bluetooth_device/model_bluetooth_device-library.html">bluetooth_device</a></li>
+      <li><a href="../cmd_cpcl/cmd_cpcl-library.html">cpcl</a></li>
+      <li><a href="../cmd_esc/cmd_esc-library.html">esc</a></li>
+      <li><a href="../plugin_constants/plugin_constants-library.html">plugin_constants</a></li>
+      <li><a href="../cmd_print_cmd/cmd_print_cmd-library.html">print_cmd</a></li>
+      <li><a href="../protoc_printer.pb/protoc_printer.pb-library.html">printer.pb</a></li>
+      <li><a href="../protoc_printer.pbenum/protoc_printer.pbenum-library.html">printer.pbenum</a></li>
+      <li><a href="../protoc_printer.pbjson/protoc_printer.pbjson-library.html">printer.pbjson</a></li>
+      <li><a href="../protoc_printer.pbserver/protoc_printer.pbserver-library.html">printer.pbserver</a></li>
+      <li><a href="../model_printer_device/model_printer_device-library.html">printer_device</a></li>
+      <li><a href="../model_printer_models/model_printer_models-library.html">printer_models</a></li>
+      <li><a href="../printer_plugin_impl/printer_plugin_impl-library.html">printer_plugin_impl</a></li>
+      <li><a href="../printer_plugin_web/printer_plugin_web-library.html">printer_plugin_web</a></li>
+      <li><a href="../printersdk/printersdk-library.html">printersdk</a></li>
+      <li><a href="../model_tcp_device/model_tcp_device-library.html">tcp_device</a></li>
+      <li><a href="../cmd_tspl/cmd_tspl-library.html">tspl</a></li>
+      <li><a href="../model_tty_device/model_tty_device-library.html">tty_device</a></li>
+      <li><a href="../model_usb_accessory_device/model_usb_accessory_device-library.html">usb_accessory_device</a></li>
+      <li><a href="../model_usb_device/model_usb_device-library.html">usb_device</a></li>
+      <li><a href="../cmd_zpl/cmd_zpl-library.html">zpl</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <h5>printer.pbjson library</h5>
+    <ol>
+
+
+
+  <li class="section-title"><a href="../protoc_printer.pbjson/protoc_printer.pbjson-library.html#constants">Constants</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/BluetoothDevice$json-constant.html">BluetoothDevice$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/BluetoothDeviceList$json-constant.html">BluetoothDeviceList$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/BluetoothDeviceType$json-constant.html">BluetoothDeviceType$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/BluetoothDeviceType_Type$json-constant.html">BluetoothDeviceType_Type$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/BluetoothReadWriteData$json-constant.html">BluetoothReadWriteData$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/BluetoothScanMode$json-constant.html">BluetoothScanMode$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/BluetoothScanMode_Mode$json-constant.html">BluetoothScanMode_Mode$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/BluetoothState$json-constant.html">BluetoothState$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/BluetoothState_State$json-constant.html">BluetoothState_State$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/LocateString$json-constant.html">LocateString$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/LocateString_KvEntry$json-constant.html">LocateString_KvEntry$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/PrinterDeviceType$json-constant.html">PrinterDeviceType$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/PrinterDeviceType_Type$json-constant.html">PrinterDeviceType_Type$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/TcpDevice$json-constant.html">TcpDevice$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/TcpDeviceList$json-constant.html">TcpDeviceList$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/TcpReadWriteData$json-constant.html">TcpReadWriteData$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/TtyDevice$json-constant.html">TtyDevice$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/TtyDeviceList$json-constant.html">TtyDeviceList$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/TtyReadWriteData$json-constant.html">TtyReadWriteData$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/UsbAccessoryDevice$json-constant.html">UsbAccessoryDevice$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/UsbAccessoryList$json-constant.html">UsbAccessoryList$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/UsbAccessoryReadWriteData$json-constant.html">UsbAccessoryReadWriteData$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/UsbDevice$json-constant.html">UsbDevice$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/UsbDeviceList$json-constant.html">UsbDeviceList$json</a></li>
+  <li><a class="deprecated" href="../protoc_printer.pbjson/UsbReadWriteData$json-constant.html">UsbReadWriteData$json</a></li>
+
+  <li class="section-title"><a href="../protoc_printer.pbjson/protoc_printer.pbjson-library.html#properties">Properties</a></li>
+  <li><a href="../protoc_printer.pbjson/bluetoothDeviceDescriptor.html">bluetoothDeviceDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/bluetoothDeviceListDescriptor.html">bluetoothDeviceListDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/bluetoothDeviceTypeDescriptor.html">bluetoothDeviceTypeDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/bluetoothReadWriteDataDescriptor.html">bluetoothReadWriteDataDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/bluetoothScanModeDescriptor.html">bluetoothScanModeDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/bluetoothStateDescriptor.html">bluetoothStateDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/locateStringDescriptor.html">locateStringDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/printerDeviceTypeDescriptor.html">printerDeviceTypeDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/tcpDeviceDescriptor.html">tcpDeviceDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/tcpDeviceListDescriptor.html">tcpDeviceListDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/tcpReadWriteDataDescriptor.html">tcpReadWriteDataDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/ttyDeviceDescriptor.html">ttyDeviceDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/ttyDeviceListDescriptor.html">ttyDeviceListDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/ttyReadWriteDataDescriptor.html">ttyReadWriteDataDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/usbAccessoryDeviceDescriptor.html">usbAccessoryDeviceDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/usbAccessoryListDescriptor.html">usbAccessoryListDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/usbAccessoryReadWriteDataDescriptor.html">usbAccessoryReadWriteDataDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/usbDeviceDescriptor.html">usbDeviceDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/usbDeviceListDescriptor.html">usbDeviceListDescriptor</a></li>
+  <li><a href="../protoc_printer.pbjson/usbReadWriteDataDescriptor.html">usbReadWriteDataDescriptor</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/sidebar-offcanvas-right-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    printersdk
+      0.0.1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
