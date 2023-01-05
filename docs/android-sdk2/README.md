@@ -1,20 +1,17 @@
-
 # 目录
 
  [TOC]
+
 # 1. SDK介绍
 
 此文档介绍佳博打印机SDK使用方式。SDK集成了打印机的多种连接方式，开发者可自己选择不同的方式连接打印机，也可自己实现。在SDK中APP与打印机连接的方式有5种，分别为：
 
-1. 无线局域网接入（TCP）
-2. Android USB接入
-3. Android USB接入（配件模式）
-4. 串口接入
-5. 蓝牙接入
+1. 无线局域网（TCP）
+2. USB接入
+3. 串口
+4. 蓝牙
 
 开发者需要根据打印机所支持的方式选择合适的接入方式。
-
-SDK2是多连接版本（支持同时连接多台打印机），其大部分接口与单连接版本相同，如需使用原有单连接版本请查看传送门：[单连接版本SDK](../sdk)
 
 # 2. 打印机指令集
 
@@ -22,19 +19,14 @@ SDK2是多连接版本（支持同时连接多台打印机），其大部分接�
 
 打印机可支持如下的一种或多种指令集，根据实际情况选择使用。各指令集的功能如下：
 
-| 指令集           | 介绍                              |
-| ---------------- | --------------------------------- |
-| Esc或EscCommand  | 票据打印指令集                    |
-| EscForDotPrinter | 票据指令集（GP-76系列针式打印机） |
-| TscCommand       | 标签打印指令集                    |
-| CpclCommand      | 面单打印指令集                    |
-| ZplCommand       | 斑马指令集                        |
+| 指令集  | 介绍    |
+| ---- | ----- |
+| Tspl | 标签指令集 |
+| Esc  | 票据指令集 |
+| Zpl  | 斑马指令集 |
+| Cpcl | 面单指令集 |
 
-- 各指令的详细说明请查看佳博打印机编程手册
-- Esc是EscCommand的重构版本，指令内容一样
-- EscForDotPrinter是Esc的子类，Esc中的部分指令在GP-76系列针式打印机上无效，故新增EscForDotPrinter类把这些无效的指令添加了@Deprecated标志。
-- 指令在不同型号的打印机上支持程度可能有区别，部分指令可能无效
-- 
+各指令的详细说明请查看佳博打印机编程手册
 
 # 3. 快速接入
 
@@ -44,11 +36,10 @@ SDK2是多连接版本（支持同时连接多台打印机），其大部分接�
 
 ```gradle
 repositories {
-	maven {
-		url  "http://118.31.6.84:8081/repository/maven-public/"
-		//如使用gradle7.0及以上版本，请设置下面的值为true
-		allowInsecureProtocol true
-	}
+    maven {
+        url  "http://118.31.6.84:8081/repository/maven-public/"
+        allowInsecureProtocol true
+    }
 }
 ```
 
@@ -56,47 +47,119 @@ repositories {
 
 ```gradle
 dependencies {
-    implementation 'com.gainscha:sdk2:1.0.6'
+    implementation 'com.gainscha:sdk2:2.0.0'
 }
 ```
 
 这里介绍如何使用SDK集成的连接接口连接并控制打印机
 
-## 3.2 添加相关权限
+## 3.2. 搜索打印机
 
-另外，需要动态申请敏感权限，在APP启动时要动态申请两个权限
+SDK提供了搜索打印机类(**PrinterFinder.java**)，实际开发中可根据需要选择是否使用。提供如下的功能：
 
-```xml
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+```java
+    /**
+ * 获取所有连接方式的设备列表
+ *
+ * @param searchPrinterResultListener 查找到新设备回调
+ */
+public void searchPrinters(SearchPrinterResultListener searchPrinterResultListener);
+/**
+ * 获取可连接的设备列表
+ *
+ * @param connectType    连接方式
+ * @param listener       查找到新设备回调
+ */
+public void searchPrinters(ConnectType connectType,final SearchPrinterResultListener listener);
+/**
+ * 停止搜索设备
+ */
+public void stopSearchDevice(Context context);
 ```
 
-开发者需自行编写代码申请这两个权限
+搜索结果回调
 
-## 3.3 相关类文件介绍
+```java
+/**
+ * 扫描打印机设备的回调接口
+ */
+public interface SearchPrinterResultListener {
+    /**
+     * 搜索到蓝牙设备
+     *
+     * @param device 蓝牙设备
+     */
+    void onSearchBluetoothPrinter(BluetoothPrinterDevice device);
 
-| 类名 | 说明 |
-|--|--|
-| Printer | 获取可用的打印机设备列表，连接打印机 |
-|ConnectionListener|打印机连接状态监听|
+    /**
+     * 搜索到USB设备
+     *
+     * @param device usb设备
+     */
+    void onSearchUsbPrinter(UsbPrinterDevice device);
 
-## 3.4 监听打印机连接状态
+    /**
+     * 搜索到USB设备（配件模式）
+     *
+     * @param device usb配件
+     */
+    void onSearchUsbPrinter(UsbAccessoryPrinterDevice device);
+
+    /**
+     * 搜索网络设备
+     *
+     * @param device WIFI打印机
+     */
+    void onSearchNetworkPrinter(WifiPrinterDevice device);
+
+    /**
+     * 搜索到串口设备
+     *
+     * @param device 串口设备
+     */
+    void onSearchSerialPortPrinter(SerialPortPrinterDevice device);
+
+    /**
+     * 搜索完成
+     */
+    void onSearchCompleted();
+}
+```
+
+使用示例
+
+```java
+// 搜索USB打印机
+new PrinterFinder().searchPrinters(
+    ConnectType.USB_DEVICE,
+    new PrinterFinder.SimpleSearchPrinterResultListener() {
+        @Override
+        public void onSearchUsbPrinter(UsbPrinterDevice usbPrinterDevice) {
+            super.onSearchUsbPrinter(usbPrinterDevice);
+            // 搜索到USB打印机设备
+        }
+    });
+```
+
+
+
+## 3.3 监听打印机连接状态
 
 ```java
 ConnectionListener listener = new ConnectionListener(){
     @Override
-    public void onPrinterConnected(String printerId) {
-		//连接成功
+    public void onPrinterConnected(Printer printer) {
+        //连接成功
     }
 
     @Override
-    public void onPrinterConnectFail(String printerId) {
-		//连接失败
+    public void onPrinterConnectFail(Printer printer) {
+        //连接失败
     }
 
     @Override
-    public void onPrinterDisconnect(String printerId) {
-		//断开连接
+    public void onPrinterDisconnect(Printer printer) {
+        //断开连接
     }
 }
 //添加连接状态监听回调（主线程回调）
@@ -108,70 +171,13 @@ Printer.removeConnectionListener(listener);
 
 ## 3.4 连接打印机
 
-SDK支持多种方式连接到打印机，可以通过调用Printer类中的方法连接打印机。SDK支持同时new多个Printer对象去连接不同的打印机，通过printerId区分不同的打印机。
+SDK支持多种方式连接到打印机，可以通过调用Printer类中的方法连接打印机。
 
 ```java
-//创建printer对象，可传入printerId，不传printerId时会生成默认的
-Printer printer=new Printer();
-        Printer printer=new Printer("Printer_123");
-//使用蓝牙连接到打印机
-        printer.connectByBlueTooth();
-//使用串口连接到打印机
-        printer.connectBySerial();
-//使用网络连接到打印机
-        printer.connectByTcp();
-//使用USB连接到打印机
-        printer.connectByUsb();
-//使用USB连接到打印机（配件模式）
-        printer.connectByUsbAccessory();
-```
-
-Printer类提供如下的静态方法，方便多打印机管理
-
-```java
-/**
- * 设置是否打印日志，日志保存文件，需确保应用具有文件读写权限
- * 日志文件最大20M,超出大小后删除旧文件重新写入
- *
- * @param enable     是否打印日志
- * @param outputFile 日志输出文件, 值为null时不保存到文件
- */
-public static void setLogEnable(boolean enable,File outputFile);
-/**
- * 获取已连接的打印机列表
- */
-public static Map<String, Printer> getConnectedPrinters();
-/**
- * 生成随机ID
- */
-private static String randomPrinterId();
-/**
- * 获取已连接的打印机实例
- */
-public static Printer getPrinter(String printerId);
-/**
- * 判断打印机是否已连接
- *
- * @param printerId 打印机ID
- * @return 是否已连接
- */
-public static boolean isConnected(String printerId);
-/**
- * 断开打印机连接
- */
-public static void disconnect(String printerId);
-/**
- * 添加打印机连接状态监听回调
- *
- * @param connectionListener 监听回调
- */
-public static void addConnectionListener(ConnectionListener connectionListener);
-/**
- * 解除打印机连接状态监听回调
- *
- * @param connectionListener 监听回调
- */
-public static void removeConnectionListener(ConnectionListener connectionListener);
+// 连接打印机
+Printer.connect(printerDevice);
+// 获取已连接的打印机列表
+List<Printer> printers = Printer.getConnectedPrinters();
 ```
 
 ## 3.5 打印内容
@@ -179,13 +185,8 @@ public static void removeConnectionListener(ConnectionListener connectionListene
 连接到打印机后，可以调用如下方法发送数据到打印机，实现打印。
 
 ```java
-Printer printer = Printer.getPrinter(printerId);
-if(printer == null && !printer.isConnected()){
-    //打印机未连接
-    return;
-}
-//发送数据到打印机，阻塞发送
-//使用TscCommand、EscCommand、CpclCommand、ZplCommand类生成打印数据
+//同步发送数据到打印机
+//注意：使用Tspl、Esc、Cpcl、Zpl类生成打印数据
 printer.print(byte[] data);
 
 //异步发送数据到打印机，并读取打印机的响应内容（超时时间内首次接收到的数据）
@@ -194,53 +195,15 @@ printer.print(byte[] data, int responseTimeOut, PrinterResponse<byte[]> onRespon
 //异步发送数据到打印机，并读取打印机的响应内容
 //responseUntilTimeout是否读取数据直到超时，当为true时会返回超时时间内读取的全部数据
 printer.print(byte[] data, int responseTimeOut, boolean responseUntilTimeout, PrinterResponse<byte[]> onResponse);
-
-//异步打印图片
-printer.print(Bitmap bitmap, int count, PrinterConfig config);
 ```
 
+# 4. 打印指令
 
-# 4. 例程
+### 4.1 标签指令（TSPL）打印
 
-## 4.1 打印图片
-
-~~~java
+```java
 public void print(Bitmap bitmap, int count){
-    PrinterConfig config = new PrinterConfig();
-    //指令
-    config.setInstruction(Instruction.ESC);
-    //浓度（1-15）
-    config.setDensity(2);
-    //间隙（毫米）
-    config.setGap(0);
-    //打印速度（1-15）
-    config.setSpeed(4);
-    //撕离
-    config.setTearMode(TearMode.TEAR);
-    //纸张类型
-    config.setPaperType(PaperType.PAPER_TYPE_CONTINUOUS);
-    //是否抖动处理图片
-    config.setBitmapShake(false);
-    //是否切分图片（长图拆分为多个标签打印）
-    config.setSlice(false);
-    //打印机分辨率
-    config.setDpi(Dpi.DPI_203);
-    //打印标签宽高（毫米）
-    config.setSize(printBitmap.getWidth() / 8, printBitmap.getHeight() / 8);
-    //打印
-    printer.print(printBitmap, 1, config);
-}
-~~~
-
-## 4.2 打印图文
-
-使用原始指令具有更加强大功能，可以设置更多的参数、添加更多的打印内容。如打印文本、线段、条码等。其缺点就是每种指令集都具有不同的实现方式，在需要切换指令集的情况下比较麻烦，需要编码多套代码。
-
-### 4.2.1 标签指令（TSPL）打印
-
-~~~java
-public void print(Bitmap bitmap, int count){
-    TscCommand tsc = new TscCommand();
+    Tspl tsc = new Tspl();
     //设置大小
     tsc.addSize(60, 40);
     //设置打印速度
@@ -254,32 +217,11 @@ public void print(Bitmap bitmap, int count){
     //打印份数
     tsc.addPrint(count);
     //执行打印
-    printer.print(tsc.getCommand());
+    printer.print(tsc.getBytes());
 }
-~~~
+```
 
-### 4.2.2 小票指令（ESC）打印
-
-~~~java
-    EscCommand cmd = new EscCommand();
-    //初始化
-    cmd.addInitializePrinter();
-    //居中对齐
-    cmd.addSelectJustification(EscCommand.JUSTIFICATION.CENTER);
-    cmd.addSetPrintingAreaWidth((short) 480);
-    //切刀
-    cmd.addCutPaper();
-    //打印文本
-    cmd.addText("打印文本");
-    //打印条码
-    cmd.addCODE128("01234567");
-    //打印图片
-    cmd.addBitmap(bitmap);
-    //执行打印
-    printer.print(cmd.getCommand());
-~~~
-
-## 4.2.3 小票指令（ESC）打印
+## 4.2 小票指令（ESC）打印
 
 ```java
 public static byte[] getESCChinese(Context context){
@@ -376,139 +318,7 @@ public static byte[] getESCChinese(Context context){
 
 ：![在这里插入图片描述](https://img-blog.csdnimg.cn/20190823101247931.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTIxODQ1Mzk=,size_16,color_FFFFFF,t_70)
 
-
-
-## 4.2.4 GP-76系列针式打印
-
-```java
-public void print(){
-    Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.man);
-    bitmap = BitmapUtil.resizeBitmap(bitmap, 200, (int) (bitmap.getHeight() * 200f / bitmap.getWidth()));
-    //使用针打的指令集EscForDotPrinter
-    EscForDotPrinter esc = new EscForDotPrinter();
-    //初始化打印机（必须添加）
-    esc.initPrinter();
-    esc.setAlign(Esc.ALIGN_CENTER);
-    esc.addText("GP-7645打印测试\n");
-    esc.setAlign(Esc.ALIGN_LEFT);
-    esc.addText("0123456789\n");
-    esc.addText("abcdefg\n");
-    esc.setTextFont(Esc.TEXT_FONT_16_PX);
-    esc.addText("16号字体\n");
-    esc.setTextFont(Esc.TEXT_FONT_24_PX);
-    esc.addText("21号字体\n");
-    esc.setTextBold(true);
-    esc.addText("加粗\n");
-    esc.setTextBold(false);
-    esc.setTextHeavy(true);
-    esc.addText("加重\n");
-    esc.setTextHeavy(false);
-    esc.setTextUnderLine(Esc.TEXT_UNDERLINE_1_PX);
-    esc.addText("下划线1\n");
-    esc.setTextUnderLine(Esc.TEXT_UNDERLINE_2_PX);
-    esc.addText("下划线2\n");
-    esc.setTextUnderLine(Esc.TEXT_UNDERLINE_NONE);
-    //打印条码
-    esc.addBarcode(Esc.BARCODE_CODE128, 120, 60, true, 20, "12345678");
-    //打印二维码
-    esc.addQrcode(60, 60, "Gprinter");
-    //走纸2行
-    esc.printAndFeedLines(2);
-    //打印图片
-    esc.addBitmap(bitmap, true);
-    try {
-        byte[] data = esc.getData();
-        printer.print(data);
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
-}
-```
-
- ![](https://cdn.jsdelivr.net/gh/mxxlei/pictures-bed@master/2021/16385193210171638519320998.png)
-
-# 5. 搜索打印机
-
-   SDK提供了搜索打印机类(**PrinterFinder.java**)，实际开发中可根据需要选择是否使用。提供如下的功能：
-
-```java
-    /**
-    * 获取所有连接方式的设备列表
-    *
-    * @param searchPrinterResultListener 查找到新设备回调
-    */
-    public void searchPrinters(Context context, SearchPrinterResultListener searchPrinterResultListener);
-    /**
-     * 获取可连接的设备列表
-     *
-     * @param connectType    连接方式
-     * @param listener       查找到新设备回调
-     */
-    public void searchPrinters(Context context, ConnectType connectType, final SearchPrinterResultListener listener);
-    /**
-     * 停止搜索设备
-     */
-    public void stopSearchDevice(Context context);
-```
-   搜索结果回调
-
-```java
-    /**
-     * 扫描打印机设备的回调接口
-     */
-    public interface SearchPrinterResultListener {
-        /**
-         * 搜索到蓝牙设备
-         *
-         * @param bluetoothDevice 蓝牙设备
-         */
-        void onSearchBluetoothPrinter(BluetoothDevice bluetoothDevice, int rssi);
-
-        /**
-         * 搜索到USB设备
-         *
-         * @param usbDevice usb设备
-         * @param rssi      信号强度
-         */
-        void onSearchUsbPrinter(UsbDevice usbDevice);
-
-        /**
-         * 搜索到USB设备（配件模式）
-         *
-         * @param usbAccessory usb配件
-         */
-        void onSearchUsbPrinter(UsbAccessory usbAccessory);
-
-        /**
-         * 搜索网络设备
-         *
-         * @param mac     MAC地址
-         * @param ip      IP地址
-         * @param gateway 网关
-         * @param netmask 掩码
-         * @param port    端口
-         */
-        void onSearchNetworkPrinter(String mac, String ip, String gateway, String netmask, int port);
-
-        /**
-         * 搜索到串口设备
-         *
-         * @param serialPortPath 串口文件地址
-         */
-        void onSearchSerialPortPrinter(String serialPortPath);
-
-        /**
-         * 搜索完成
-         */
-        void onSearchCompleted();
-    }
-```
-
-# 6. 绘制打印内容图片
-
-   使用TscCommand、EscCommand等指令生成类来构建打印内容具有一定的限制性，如，不能自定义字体（只能使用打印机内置的一些字体）、打印的内容不能在上位机预览（只能通过打印后查看打印结果）等。
-
-   在Android中可以通过Canvas自定义绘制任意内容，生产bitmap后执行打印。使用这种方式生成的打印内容可以实时预览。但是发送给打印机数据量较大（使用蓝牙传输时传输速度差距大）.
+# 5. 绘制打印内容图片
 
    SDK提供**BitmapCanvas**类用于快速绘制图片。其功能如下：
 
@@ -568,11 +378,6 @@ public class BitmapCanvas {
      * @return 添加后的Y位置
      */
     public int drawText(int x, int y, String text, int textSize, Typeface typeface, int maxLineWidth, int letterSpace, int lineSpace);
-
-    /**
-     * 根据指定的宽度拆分文本为多行文本
-     */
-    private List<String> splitTextForWidth(String text, int maxLineWidth, Paint paint);
 
     /**
      * 绘制图片
